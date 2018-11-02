@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://hn9xiang.com/index/developer/doc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>开发者中心-黑爬虫-黑爬虫</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link type="text/css" rel="stylesheet" href="./开发者中心-黑爬虫-黑爬虫_files/reset.css">
+    <link type="text/css" rel="stylesheet" href="./开发者中心-黑爬虫-黑爬虫_files/report.css">
+	<link type="text/css" rel="stylesheet" href="./开发者中心-黑爬虫-黑爬虫_files/layer.css">
+	<link type="text/css" rel="stylesheet" href="./开发者中心-黑爬虫-黑爬虫_files/credit.css">
+	<script type="text/javascript" src="./开发者中心-黑爬虫-黑爬虫_files/layer.js.下载"></script><link href="./开发者中心-黑爬虫-黑爬虫_files/layer(1).css" type="text/css" rel="styleSheet" id="layermcss">
+    <link rel="stylesheet" href="./开发者中心-黑爬虫-黑爬虫_files/layui.css">
+	<script type="text/javascript" src="./开发者中心-黑爬虫-黑爬虫_files/layui.js.下载"></script>
+<link id="layuicss-skincodecss" rel="stylesheet" href="./开发者中心-黑爬虫-黑爬虫_files/code.css" media="all"></head>
+<body class="flex-body" style="">
+<!--head-->
+<div class="head" style="position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;z-index:1000">
+    <div class="head-wrapper mid-wrapper clearfix">
+        <div class="logo-wrapper float-left">
+            <img src="./开发者中心-黑爬虫-黑爬虫_files/logo@2x.png" alt="黑爬虫">
+        </div>
+        <ul class="nav-list float-left clearfix">
+            <li>
+                <a href="http://hn9xiang.com/index/index/index.html">首页</a>
+            </li>
+            <li>
+                <a href="http://hn9xiang.com/index/query/index.html">借贷报告</a>
+            </li>
+			 <li>
+                <a href="http://hn9xiang.com/index/creditcenter/index.html">信用查询</a>
+            </li>
+			  <li>
+                <a href="http://hn9xiang.com/index/lawcollect/index.html">法律催收</a>
+            </li>
+            <li>
+                <a href="http://hn9xiang.com/index/paymentpc/finance.html">财务中心</a>
+            </li>
+            <li> 
+                 <a href="http://hn9xiang.com/index/borrowmark/index.html">贷款超市</a> 
+            </li> 
+			
+        </ul>
+        <div class="user-head-info float-right">
+            <span class="user-info">185****9401</span>
+            <div id="user-index" class="user-index">
+                <a href="javascript:;"><img src="./开发者中心-黑爬虫-黑爬虫_files/icon_user04.png">个人中心</a>
+                <ul id="user-index-list" class="user-index-list box-shadow">
+                    <li>
+                        <a href="http://hn9xiang.com/index/login/modify.html">修改密码</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">绑定微信</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="out()">退出账号</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="width:100%;height:50px"></div>
+<!--head end-->
+
+
+<style>
+    #contentMark {
+        -webkit-print-color-adjust:exact;
+        font-family:Helvetica Neue,Helvetica,Hiragino Sans GB,Arial,sans-serif;
+        font-size:13px;
+        line-height:18px;
+        color:#737373;
+        background-color:#fff;
+        margin:10px 13px;
+    }
+    #contentMark h3,#contentMark h4,#contentMark h5,#contentMark p {
+        margin:0;
+        padding:0
+    }
+    #contentMark p {
+        margin-bottom:9px
+    }
+    #contentMark h3,#contentMark h4,#contentMark h5{
+        color:#404040;
+        line-height:36px
+    }
+    #contentMark h3 {
+        font-size:18px
+    }
+    #contentMark h4 {
+        font-size:16px
+    }
+    #contentMark h5 {
+        font-size:14px
+    }
+    .layui-table th {
+        text-align: center;
+    }
+</style>
+<!--comment-->
+<!--01-->
+<div class="content-wrapper">
+    <div class="borrowing-wrapper mid-wrapper box-shadow">
+        <ul class="borrowing-list clearfix">
+            <li>
+                <a href="http://hn9xiang.com/index/developer/index.html">开发者中心</a>
+            </li>
+            <li>
+                <a href="http://hn9xiang.com/index/developer/doc.html" class="active">接口文档</a>
+            </li>
+        </ul>
+    </div>
+    <!--01 end-->
+    <div class="seach-wrapper mid-wrapper box-shadow">
+        <div style="background-color: rgb(255, 255, 255); padding: 14px 18px;"><div id="contentMark"><h3 id="-">描述</h3>
+            <p>本接口用于获取征信信息。</p>
+            <h4 id="-">接口地址</h4>
+            <p>http://www.hn9xiang.com/api/query</p>
+            <h4 id="-">支持格式</h4>
+            <p>JSON</p>
+            <h4 id="-">请求方式</h4>
+            <p>GET</p>
+            <h4 id="-">请求示例</h4>
+            <p>http://www.hn9xiang.com/api/query?name=张三&amp;mobile=18888888888&amp;idcard=580580199808080882</p>
+            <h4 id="-">请求参数</h4>
+            <table class="layui-table">
+                <thead>
+                    <tr>
+                        <th>参数名称</th>
+                        <th>参数类型</th>
+                        <th>数据类型</th>
+                        <th>必填</th>
+                        <th>说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>name</td>
+                        <td>query</td>
+                        <td>string</td>
+                        <td>是</td>
+                        <td>姓名</td>
+                    </tr>
+                    <tr>
+                        <td>mobile</td>
+                        <td>query</td>
+                        <td>string</td>
+                        <td>是</td>
+                        <td>手机号</td>
+                    </tr>
+                    <tr>
+                        <td>idcard</td>
+                        <td>query</td>
+                        <td>string</td>
+                        <td>是</td>
+                        <td>身份证号</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 id="-">调用示例</h4>
+            <pre class="layui-code layui-box layui-code-view" lay-title="  PHP"><h3 class="layui-code-h3">  PHP</h3><ol class="layui-code-ol" style="max-height: 200px;"><li>&lt;?php</li><li>$curl = curl_init();</li><li>curl_setopt_array($curl, array(</li><li>  CURLOPT_URL =&gt; "http://www.hn9xiang.com/api/query?name=张三&amp;mobile=18888888888&amp;idcard=580580199808080882",</li><li>  CURLOPT_RETURNTRANSFER =&gt; true,</li><li>  CURLOPT_ENCODING =&gt; "",</li><li>  CURLOPT_MAXREDIRS =&gt; 10,</li><li>  CURLOPT_TIMEOUT =&gt; 30,</li><li>  CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,</li><li>  CURLOPT_CUSTOMREQUEST =&gt; "GET",</li><li>  CURLOPT_HTTPHEADER =&gt; array(</li><li>    "accept: application/json",</li><li>    "api-key: 您的api-key",</li><li>    "content-type: application/json"</li><li>  ),</li><li>));</li><li>$response = curl_exec($curl);$err = curl_error($curl);</li><li>curl_close($curl);</li><li>if ($err) {</li><li>  echo "cURL Error #:" . $err;</li><li>} else {</li><li>  echo $response;</li><li>}</li><li>            </li></ol></pre>
+
+            <h3 id="-">响应</h3>
+            <h4 id="-">响应内容</h4>
+            <p>如果请求成功，将返回包含如下内容的 JSON 字符串：</p>
+             <pre class="layui-code layui-box layui-code-view" lay-title="  JSON"><h3 class="layui-code-h3">  JSON</h3><ol class="layui-code-ol" style="max-height: 200px;"><li>{</li><li>    Info: Info,</li><li>    Summary: StdSummary,</li><li>    FutureUnrepayment : FutureUnrepayment,</li><li>    Reports: []Report,</li><li>    StatusCode: int64</li><li>}</li><li>            </li></ol></pre>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>类型</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Info</td>
+                    <td>Info</td>
+                    <td>信息</td>
+                </tr>
+                <tr>
+                    <td>Summary</td>
+                    <td>StdSummary</td>
+                    <td>标准格式的汇总数据</td>
+                </tr>
+                <tr>
+                    <td>FutureUnrepayment</td>
+                    <td>FutureUnrepayment</td>
+                    <td>每日待还</td>
+                </tr>
+                <tr>
+                    <td>Reports</td>
+                    <td>Report</td>
+                    <td>各数据源网站报告</td>
+                </tr>
+                <tr>
+                    <td>StatusCode</td>
+                    <td>int64</td>
+                    <td>状态码: 0:请求成功 1: api-key 错误 2: 请求参数不可为空 3: 余额不足 4: 系统错误</td>
+                </tr>
+                </tbody>
+            </table>
+            <h5 id="info-">Info 信息</h5>
+            <pre class="layui-code layui-box layui-code-view" lay-title="  JSON"><h3 class="layui-code-h3">  JSON</h3><ol class="layui-code-ol" style="max-height: 200px;"><li>{</li><li>    Name :   string,</li><li>    Mobile : string,</li><li>    IDCard : string,</li><li>    Token : string,</li><li>    Time : string</li><li>}</li><li>            </li></ol></pre>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>类型</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>string</td>
+                    <td>姓名</td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td>string</td>
+                    <td>手机号</td>
+                </tr>
+                <tr>
+                    <td>IDCard</td>
+                    <td>string</td>
+                    <td>身份证号</td>
+                </tr>
+                <tr>
+                    <td>Token</td>
+                    <td>string</td>
+                    <td>Token</td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td>int64</td>
+                    <td>时间戳</td>
+                </tr>
+                </tbody>
+            </table>
+            <h5 id="stdsummary-">StdSummary 标准格式的汇总数据</h5>
+            <pre class="layui-code layui-box layui-code-view" lay-title="  JSON"><h3 class="layui-code-h3">  JSON</h3><ol class="layui-code-ol" style="max-height: 200px;"><li>{</li><li>    CreditTotal :     string,</li><li>    UnRepaymentTotal : string,</li><li>    OverdueTotal :    string,</li><li>    OverdueCount :    string,</li><li>    CreditCount :     string ,</li><li>    Overdue :         string ,</li><li>    CreditScore :     string</li><li>}</li><li>            </li></ol></pre>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>类型</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>CreditTotal</td>
+                    <td>string</td>
+                    <td>累计借款</td>
+                </tr>
+                <tr>
+                    <td>UnRepaymentTotal</td>
+                    <td>string</td>
+                    <td>未还负债</td>
+                </tr>
+                <tr>
+                    <td>OverdueTotal</td>
+                    <td>string</td>
+                    <td>逾期总额</td>
+                </tr>
+                <tr>
+                    <td>OverdueCount</td>
+                    <td>string</td>
+                    <td>逾期次数</td>
+                </tr>
+                <tr>
+                    <td>CreditCount</td>
+                    <td>string</td>
+                    <td>借款次数</td>
+                </tr>
+                <tr>
+                    <td>Overdue</td>
+                    <td>string</td>
+                    <td>当前逾期金额</td>
+                </tr>
+                <tr>
+                    <td>CreditScore</td>
+                    <td>string</td>
+                    <td>芝麻信用分</td>
+                </tr>
+                </tbody>
+            </table>
+            <h5 id="-">FutureUnrepayment 每日待还</h5>
+            <pre class="layui-code layui-box layui-code-view" lay-title="  JSON"><h3 class="layui-code-h3">  JSON</h3><ol class="layui-code-ol" style="max-height: 200px;"><li>{</li><li>  Today   :Unrepayment,</li><li>  Day1    :Unrepayment,</li><li>  Day2    :Unrepayment,</li><li>  Day3    :Unrepayment,</li><li>  Day4    :Unrepayment,</li><li>  Day5    :Unrepayment,</li><li>  Day6    :Unrepayment,</li><li>  DayMore :Unrepayment</li><li>}</li><li>            </li></ol></pre>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>类型</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Today</td>
+                    <td>Unrepayment</td>
+                    <td>今日应还</td>
+                </tr>
+                <tr>
+                    <td>Day1</td>
+                    <td>Unrepayment</td>
+                    <td>1日待还</td>
+                </tr>
+                <tr>
+                    <td>Day2</td>
+                    <td>Unrepayment</td>
+                    <td>2日待还</td>
+                </tr>
+                <tr>
+                    <td>Day3</td>
+                    <td>Unrepayment</td>
+                    <td>3日待还</td>
+                </tr>
+                <tr>
+                    <td>Day4</td>
+                    <td>Unrepayment</td>
+                    <td>4日待还</td>
+                </tr>
+                <tr>
+                    <td>Day5</td>
+                    <td>Unrepayment</td>
+                    <td>5日待还</td>
+                </tr>
+                <tr>
+                    <td>Day6</td>
+                    <td>Unrepayment</td>
+                    <td>6日待还</td>
+                </tr>
+                <tr>
+                    <td>DayMore</td>
+                    <td>Unrepayment</td>
+                    <td>≥7日待还</td>
+                </tr>
+                </tbody>
+            </table>
+            <h5 id="report-">Report 数据源网站获取的报告</h5>
+            <pre class="layui-code layui-box layui-code-view" lay-title="  JSON"><h3 class="layui-code-h3">  JSON</h3><ol class="layui-code-ol" style="max-height: 200px;"><li>{</li><li>  HostName: string,</li><li>  Summary: []SummaryKey,</li><li>  Header: []string,</li><li>  Records: [][]string,</li><li>  Status: int8,</li><li>}</li><li>            </li></ol></pre>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>类型</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>HostName</td>
+                    <td>string</td>
+                    <td>数据源网站名称</td>
+                </tr>
+                <tr>
+                    <td>Summary</td>
+                    <td>[]SummaryKey</td>
+                    <td>数据源网站自有格式的汇总数据</td>
+                </tr>
+                <tr>
+                    <td>Header</td>
+                    <td>[]string</td>
+                    <td>借款记录数据源网站自有格式表头</td>
+                </tr>
+                <tr>
+                    <td>Records</td>
+                    <td>[][]string</td>
+                    <td>借款记录数据源网站自有格式记录</td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>int8</td>
+                    <td>数据源网站查询结果状态：0:用户未注册；1:用户已注册，数据成功采集；2：网站异常，无法访问;3:网站正常，我们采集异常 4: "姓名未填写，无法查询"; 5: "手机号未填写，无法查询"; 6: "身份证号未填写，无法查询"; 7: "接口维护中，请稍后重试"</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h5 id="summarykey-">SummaryKey 自有格式汇总数据项</h5>
+            <pre class="layui-code layui-box layui-code-view" lay-title="  JSON"><h3 class="layui-code-h3">  JSON</h3><ol class="layui-code-ol" style="max-height: 200px;"><li>{</li><li>    Key : string,</li><li>    Value : string</li><li>}</li><li>            </li></ol></pre>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>字段名称</th>
+                    <th>类型</th>
+                    <th>说明</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Key</td>
+                    <td>string</td>
+                    <td>字段名</td>
+                </tr>
+                <tr>
+                    <td>Value</td>
+                    <td>string</td>
+                    <td>字段值</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<!--footer-->
+<div class="footer-wrapper">
+    <div class="footer-content mid-wrapper">
+        ©湖南九象信息集团有限公司&nbsp;&nbsp;&nbsp;湘ICP备17016724号&nbsp;&nbsp;&nbsp;<span id="alert_pic">营业执照</span>
+    </div>
+</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1268034487'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1268034487%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1268034487"><a href="http://www.cnzz.com/stat/website.php?web_id=1268034487" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="./开发者中心-黑爬虫-黑爬虫_files/pic.gif"></a></span><script src="./开发者中心-黑爬虫-黑爬虫_files/z_stat.php" type="text/javascript"></script><script src="./开发者中心-黑爬虫-黑爬虫_files/core.php" charset="utf-8" type="text/javascript"></script>
+<!--footer end-->
+<!--comment end-->
+<script type="text/javascript" src="./开发者中心-黑爬虫-黑爬虫_files/jquery.min.js.下载"></script>
+<script type="text/javascript" src="./开发者中心-黑爬虫-黑爬虫_files/common.js.下载"></script>
+
+<script>
+    layui.use('code', function(){ //加载code模块
+        layui.code({
+            title: 'code'
+            ,height: '200px'
+            ,about: false
+        });
+    });
+</script>
+
+<script type="text/javascript">
+
+$("#alert_pic").click(function() {
+        layer.open({
+            type: 1
+            ,offset: '200px' //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+            ,id: 'layerDemo' //防止重复弹出
+            ,content: '<div style="padding: 18px 7px;">'+ "<img style='width: 345px;' src='http://hn9xiang.com/static/index/img/九象集团营业执照.jpg'>" +'</div>'
+            ,btn: '关闭全部'
+            ,btnAlign: 'c' //按钮居中
+            ,shade: 0.6 //不显示遮罩
+            ,yes: function(){
+              layer.closeAll();
+            }
+          })
+    })
+    function out(){
+        $.ajax({
+            type:"post",
+            url:"/index/login/sign.html",
+            success:function(json){
+                if(json.success == true){
+                    layer.open({
+                        content: json.msg
+                        , skin: 'msg'
+                        , time: 3
+                    });
+                    var sleep=setInterval(function(){
+                        clearInterval(sleep);
+                        location.href="/index/login/login.html";
+                    })
+                }
+
+            }
+        });
+    };
+
+</script>
+
+<!-- 统计 开始 -->
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1268034487'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1268034487%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1268034487"></span><script src="./开发者中心-黑爬虫-黑爬虫_files/z_stat.php" type="text/javascript"></script><script src="./开发者中心-黑爬虫-黑爬虫_files/core.php" charset="utf-8" type="text/javascript"></script>
+<!-- 统计 结束 -->
+
+
+</div><div style="height: 0px; width: 0px; position: absolute; top: -10px; left: -10px; overflow: hidden; visibility: hidden;"></div><div id="zoom-continer" style="position: absolute; overflow: hidden; font-size: 0px; box-shadow: rgb(0, 0, 0) 0px 0px 10px; z-index: 99999; min-height: 18px; min-width: 18px; pointer-events: none; opacity: 0; padding: 5px; transition: opacity 0s ease-in-out; background: url(&quot;data:image/gif;base64,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&quot;) center center no-repeat rgb(255, 255, 255);"></div><div id="cli_dialog_div"></div></body></html>

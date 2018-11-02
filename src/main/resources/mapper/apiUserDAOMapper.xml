@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.APIUserDAO">
+    <resultMap id="apiUserMap" type="com.dwsj.vo.APIUserVo"></resultMap>
+    <update id="reduceMoney" >
+        update t_user set money = money - #{money} where id=#{id}
+    </update>
+    <select id="checkUser" resultMap="apiUserMap">
+      select * from t_user where code=#{code} and `key`=#{key}
+    </select>
+    <update id="addMoney" >
+        update t_user set money = money + #{money} where id=#{id}
+    </update>
+    <select id="getById" resultMap="apiUserMap" parameterType="long">
+        select * from t_user where id = #{id}
+    </select>
+    <update id="update">
+        update t_user
+        <set>
+            <if test="code!=null">code = #{code},</if>
+            <if test="key!=null">`key` = #{key},</if>
+        </set>
+        where id = #{id}
+    </update>
+
+
+
+
+</mapper>

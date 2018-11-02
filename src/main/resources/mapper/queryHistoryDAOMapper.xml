@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.QueryHistoryDAO">
+    <resultMap id="queryHistoryMap" type="com.dwsj.vo.QueryHistoryVo"></resultMap>
+    <select id="getById" resultMap="queryHistoryMap" parameterType="long">
+        select * from t_query_history where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_query_history where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="queryHistoryMap">
+        select * from t_query_history limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="queryHistoryMap">
+        select * from t_query_history
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_query_history
+    </select>
+    <insert id="save" parameterType="queryHistoryVo">
+        insert into t_query_history (create_time, pc_user_id, kehu_id, type, type_correspond_id) values (#{createTime}, #{pcUserId}, #{kehuId}, #{type}, #{typeCorrespondId})
+    </insert>
+    <select id="getQueryLenderHistory" resultMap="queryHistoryMap">
+        select * from t_query_history where kehu_id=#{kehuId} and pc_user_id=#{pcUserId}
+    </select>
+</mapper>

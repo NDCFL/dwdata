@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.AreaDAO">
+    <resultMap id="areaMap" type="com.dwsj.vo.AreaVo"></resultMap>
+    <resultMap id="select2Map" type="com.dwsj.vo.Select2Vo"></resultMap>
+    <sql id="search">
+        <if test="#{searchVal!=null} and #{searchVal!=''}">
+            and (code like concat('%${searchVal}%')
+            or name like concat ('%${searchVal}%'))
+        </if>
+    </sql>
+    <select id="getById" resultMap="areaMap" parameterType="long">
+        select * from t_area where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_area where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="areaMap">
+        select * from t_area where 1=1 <include refid="search"/> limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getJiFen" resultMap="select2Map">
+        select id,name as text from t_area
+    </select>
+    <select id="listAll" resultMap="areaMap">
+        select * from t_area
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_area where 1=1 <include refid="search"/>
+    </select>
+    <select id="getAreaInfo" resultMap="areaMap">
+        select * from t_area where code = #{code}
+    </select>
+    <insert id="save" parameterType="areaVo">
+        insert into t_area ( code,name) values ( #{code},#{name})
+    </insert>
+    <update id="update">
+        update t_area set
+        code = #{code},
+        name = #{name}
+        where id = #{id}
+    </update>
+</mapper>

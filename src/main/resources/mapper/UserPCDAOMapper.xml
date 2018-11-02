@@ -1,0 +1,78 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dwsj.dao.UserPCDAO">
+	<resultMap type="userPCVo" id="userMap"></resultMap>
+    <resultMap type="select2Vo" id="userIdAndNameMap">
+    </resultMap>
+	<sql id="Base_Column_List">id,</sql>
+	<select id="getByAccountPassword" resultType="userPCVo">
+		<![CDATA[
+			select * from t_pc_user where password = #{password} and  phone = #{account} and is_active=0
+		]]>
+	</select>
+	<select id="getById" resultMap="userMap" parameterType="long">
+		select * from t_pc_user where id = #{id}
+	</select>
+	<select id="checkLogin" resultType="int" parameterType="string">
+		select count(*) from t_pc_user where phone = #{phone}
+	</select>
+	<select id="checkReg" resultType="int" parameterType="string">
+		select  count(*) from t_pc_user where phone = #{phone}
+	</select>
+	<select id="findByPhone" resultMap="userMap" parameterType="string">
+		select * from t_pc_user where phone = #{phone}
+	</select>
+	<delete id="removeById" parameterType="long">
+		delete from t_pc_user where id = #{id}
+	</delete>
+	<select id="listPage" resultMap="userMap">
+		select * from t_pc_user limit #{pageNo},#{pageSize}
+	</select>
+	<select id="listAll" resultMap="userMap">
+		select * from t_pc_user
+	</select>
+	<select id="getUser" resultMap="userIdAndNameMap">
+		select id,phone as text from t_pc_user
+	</select>
+	<select id="count" resultType="long">
+		select count(*) from t_pc_user
+	</select>
+	<select id="getPassword" resultType="string" parameterType="long">
+		select password from t_pc_user where id=#{id}
+	</select>
+    <select id="select2List" resultType="string" parameterType="long">
+        select id,phone from t_pc_user
+    </select>
+	<insert id="save" parameterType="userPCVo">
+		<selectKey keyProperty="id" order="AFTER" resultType="long">
+			SELECT LAST_INSERT_ID() as id
+		</selectKey>
+		insert into t_pc_user (phone, password,  jifen, kehu, is_active, create_time,give_jifen) values (#{phone}, #{password}, #{jifen}, #{kehu},#{isActive}, now(),#{giveJifen})
+	</insert>
+	<update id="updateStatus">
+		update t_pc_user set is_active=#{status} where id=#{id}
+	</update>
+	<update id="updatePwd">
+		update t_pc_user set password=#{pwd} where id=#{id}
+	</update>
+	<update id="updatePhone">
+		update t_pc_user set phone=#{phone} where id=#{id}
+	</update>
+	<update id="addKeHu">
+		update t_pc_user set kehu=kehu+1 where id=#{id}
+	</update>
+	<update id="update">
+		update t_pc_user set password = #{password} where phone = #{phone}
+	</update>
+	<update id="setPwd">
+		update t_pc_user set password=#{pwd} where phone=#{phone}
+	</update>
+	<update id="updateJiFen">
+		update t_pc_user set jifen=#{jifen},end_time=#{endTime} where id=#{id}
+	</update>
+	<update id="updateGive">
+		update t_pc_user set give_jifen=give_jifen+#{giveJifen} where id=#{id}
+	</update>
+</mapper>

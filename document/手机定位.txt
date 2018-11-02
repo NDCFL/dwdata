@@ -1,0 +1,7 @@
+接口账号:
+Key: 87f52796ed
+Secret：7f507835aeceb5be3c6e996317af30cb
+接口文档地址：
+http://doc.oschina.net/shujudu
+
+访问密码：shujudu

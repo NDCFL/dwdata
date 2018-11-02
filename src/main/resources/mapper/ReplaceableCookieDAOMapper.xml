@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.ReplaceableCookieDAO">
+    <resultMap id="replaceableCookieMap" type="com.dwsj.vo.ReplaceableCookieVo"></resultMap>
+    <select id="getById" resultMap="replaceableCookieMap" parameterType="long">
+        select * from t_replaceable_cookie where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_replaceable_cookie where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="replaceableCookieMap">
+        select * from t_replaceable_cookie limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="replaceableCookieMap">
+        select * from t_replaceable_cookie
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_replaceable_cookie
+    </select>
+    <insert id="save" parameterType="replaceableCookieVo">
+        insert into t_replaceable_cookie (name, cookie, remark) values ( #{name},#{cookie},#{remark})
+    </insert>
+    <update id="update">
+        update t_replaceable_cookie
+        <set>
+            <if test="name != null"> name = #{name},</if>
+            <if test="cookie != null"> cookie = #{cookie},</if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

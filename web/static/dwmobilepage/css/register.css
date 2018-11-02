@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+body{width: 100%;height: auto;min-width: 320px;font-family: "微软雅黑";}
+ul li{list-style: none;}
+
+.top{width: 100%;min-width: 320px;height: 6.5rem;}
+.top_img{width:100%;position: relative;height: 5rem;}
+.top_img .p1{width: 100%;height: 40px;line-height: 40px;text-align: center;color:#4344AF;font-size: 0.6rem;position: absolute;top:1rem;}
+.top_img .p2{width: 100%;height: 40px;line-height: 40px;text-align: center;color:#101010;font-size: 0.2rem;position: absolute;top:1.8rem;}
+.top_img>img{width: 100%;}
+.top span{color: #fff;width: 3rem;height: 1rem;position: absolute;bottom: -0.9rem;left:7rem;}
+.top span img{width: 19%;float: left;}
+.top i{color: #fff;font-size: 0.3rem;font-style: normal;display: inline-block;width: 2rem;float: left;height: 30px;line-height: 23px;margin-left: 0.2rem;}
+
+.main{width: 100%;min-width: 320px;margin-bottom: 1rem;}
+/*.main .mian_ul{width: 80%;margin: 0 auto;}*/
+.main_ul>li{width: 100%;height: 60px;line-height: 60px;text-align: center;border-bottom: 1px solid #ddd;position: relative;}
+.main_ul>li input{border: none;outline: none;font-size: 0.35rem;height: 1rem;width: 70%;}
+#pass{border: none;outline: none;font-size: 0.35rem;}
+.span1{display: inline-block;width: 0.5rem;height: 0.5rem;position: absolute;left: 0.1rem;top: 0.3rem;}
+.span1 img{width: 100%;}
+
+.span2{display: inline-block;width: 0.65rem;height: 0.65rem;position: absolute;left: 0.05rem;top: 0.3rem;}
+.span2 img{width: 100%;}
+.span3{width: 100px;height: 30px;line-height:30px;text-align: center;position: absolute;right: 0;top:0.3rem;font-size: 0.3rem;}
+.span3 a{text-decoration: none;}
+footer{width: 100%;min-width: 320px;}
+.button{width: 100%;height: 40px;text-align: center;}
+button{width: 70%;text-align: center;height: 40px;border-radius: 5px;line-height: 40px;color: #fff;background:#3085F9 ;
+      outline: none;border: none;font-size: 0.35rem;}
+footer p{width: 100%;min-width: 320px;text-align: center;padding: 10px 0;}  
+footer p a{text-decoration: none;color: #0076FF;}   
+.bg{width: 100%;box-sizing: border-box;padding: 2rem 15% ;}
+.bg .bg_left,.bg .bg_right{width: 50%;float: left;}
+.bg .bg_right img{float: right;}
+.bg .bg_left img,.bg .bg_right img{width: 1rem;}

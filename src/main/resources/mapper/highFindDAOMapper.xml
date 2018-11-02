@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.HighFindDAO">
+    <resultMap id="highFindMap" type="com.dwsj.vo.HighFindVo"></resultMap>
+    <select id="getById" resultMap="highFindMap" parameterType="long">
+        select * from t_high_find where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_high_find where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="highFindMap">
+        select * from t_high_find order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="highFindMap">
+        select * from t_high_find
+    </select>
+    <select id="getInfo" resultMap="highFindMap">
+        select * from t_high_find where kehu_id=#{kehuId} and pc_user_id = #{pcUserId}
+    </select>
+    <select id="getInfoByOrderId" resultMap="highFindMap">
+        select * from t_high_find where orderitem=#{orderitem}
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_high_find
+    </select>
+    <select id="getStatus" resultMap="highFindMap">
+        select id,mifang_status,youpingzheng_status,jinjiedao_status,xiaocaiguanjia_status,is_active from t_high_find where id=#{id}
+    </select>
+    <select id="getBaseInfo" resultMap="highFindMap">
+        select id,mifang_data,mifang_status,youpingzheng_data,youpingzheng_status,jinjiedao_data,jinjiedao_status,xiaocaiguanjia_data,xiaocaiguanjia_status,xiaocaiguanjia_basedata,xiaocaiguanjia_status,ip,device,address,create_time,is_active,wx_img from t_high_find where kehu_id=#{kehuId} and pc_user_id=#{pcUserId}
+    </select>
+    <insert id="save" parameterType="highFindVo">
+        <selectKey keyProperty="id" order="AFTER" resultType="long">
+            SELECT LAST_INSERT_ID() as id
+        </selectKey>
+        insert into t_high_find (pc_user_id, kehu_id, mifang_task_id, mifang_phone, mifang_password, mifang_data, mifang_status, youpingzheng_task_id, youpingzheng_phone, youpingzheng_password, youpingzheng_data, youpingzheng_status, jinjiedao_task_id, jinjiedao_phone, jinjiedao_password, jinjiedao_data, jinjiedao_status, xiaocaiguanjia_phone, xiaocaiguanjia_password, xiaocaiguanjia_data,xiaocaiguanjia_basedata, xiaocaiguanjia_status, ip, device, wx_img, openid, create_time,qr_img,is_active,address,`time`,orderitem)
+        values (#{pcUserId}, #{kehuId}, #{mifangTaskId}, #{mifangPhone}, #{mifangPassword}, #{mifangData}, #{mifangStatus}, #{youpingzhengTaskId}, #{youpingzhengPhone}, #{youpingzhengPassword}, #{youpingzhengData}, #{youpingzhengStatus}, #{jinjiedaoTaskId}, #{jinjiedaoPhone}, #{jinjiedaoPassword}, #{jinjiedaoData}, #{jinjiedaoStatus}, #{xiaocaiguanjiaPhone}, #{xiaocaiguanjiaPassword}, #{xiaocaiguanjiaData},#{xiaocaiguanjiaBaseData}, #{xiaocaiguanjiaStatus}, #{ip}, #{device}, #{wxImg}, #{openid}, now(),#{qrImg},#{isActive},#{address},#{time},#{orderitem})
+    </insert>
+    <update id="updateStatus">
+        update t_high_find set is_active=#{status} where id=#{id}
+    </update>
+    <update id="update">
+        update t_high_find
+            <set>
+                <if test="mifangTaskId != null"> mifang_task_id = #{mifangTaskId},</if>
+                <if test="mifangPhone != null"> mifang_phone = #{mifangPhone},</if>
+                <if test="mifangPassword != null"> mifang_password = #{mifangPassword},</if>
+                <if test="mifangData != null"> mifang_data = #{mifangData},</if>
+                <if test="mifangStatus != null"> mifang_status = #{mifangStatus},</if>
+                <if test="youpingzhengTaskId != null"> youpingzheng_task_id = #{youpingzhengTaskId},</if>
+                <if test="youpingzhengPhone != null"> youpingzheng_phone = #{youpingzhengPhone},</if>
+                <if test="youpingzhengPassword != null"> youpingzheng_password = #{youpingzhengPassword},</if>
+                <if test="youpingzhengData != null"> youpingzheng_data = #{youpingzhengData},</if>
+                <if test="youpingzhengStatus != null"> youpingzheng_status = #{youpingzhengStatus},</if>
+                <if test="jinjiedaoTaskId != null"> jinjiedao_task_id = #{jinjiedaoTaskId},</if>
+                <if test="jinjiedaoPhone != null"> jinjiedao_phone = #{jinjiedaoPhone},</if>
+                <if test="jinjiedaoPassword != null"> jinjiedao_password = #{jinjiedaoPassword},</if>
+                <if test="jinjiedaoData != null"> jinjiedao_data = #{jinjiedaoData},</if>
+                <if test="jinjiedaoStatus != null"> jinjiedao_status = #{jinjiedaoStatus},</if>
+                <if test="xiaocaiguanjiaPhone != null"> xiaocaiguanjia_phone = #{xiaocaiguanjiaPhone},</if>
+                <if test="xiaocaiguanjiaPassword != null"> xiaocaiguanjia_password = #{xiaocaiguanjiaPassword},</if>
+                <if test="xiaocaiguanjiaData != null"> xiaocaiguanjia_data = #{xiaocaiguanjiaData},</if>
+                <if test="xiaocaiguanjiaStatus != null"> xiaocaiguanjia_status = #{xiaocaiguanjiaStatus},</if>
+                <if test="ip != null">ip = #{ip},</if>
+                <if test="device != null">device = #{device},</if>
+                <if test="wxImg != null">wx_img = #{wxImg},</if>
+                <if test="openid != null">openid = #{openid},</if>
+                <if test="address != null">address = #{address},</if>
+                <if test="time != null">`time` = #{time},</if>
+                <if test="qrImg != null"> qr_img= #{qrImg},</if>
+                <if test="isActive != null"> is_active= #{isActive},</if>
+                <if test="xiaocaiguanjiaBaseData != null">xiaocaiguanjia_basedata = #{xiaocaiguanjiaBaseData},</if>
+                <if test="orderitem != null"> orderitem= #{orderitem},</if>
+            </set>
+        where id = #{id}
+    </update>
+</mapper>

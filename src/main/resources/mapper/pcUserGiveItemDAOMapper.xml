@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.PcUserGiveItemDAO">
+    <resultMap id="pcUserGiveItemMap" type="com.dwsj.vo.PcUserGiveItemVo"></resultMap>
+    <select id="getById" resultMap="pcUserGiveItemMap" parameterType="long">
+        select * from t_pc_user_give_item where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_pc_user_give_item where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="pcUserGiveItemMap">
+        select * from t_pc_user_give_item where 1=1 <if test="id!=null">and pc_user_id=#{id}</if> order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="pcUserGiveItemMap">
+        select * from t_pc_user_give_item
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_pc_user_give_item where 1=1 <if test="id!=null">and pc_user_id=#{id}</if>
+    </select>
+    <insert id="save" parameterType="pcUserGiveItemVo">
+        insert into t_pc_user_give_item (pc_user_id, jifen, type, is_active, create_time) values ( #{pcUserId},#{jifen},#{type},#{isActive},now())
+    </insert>
+    <update id="updateStatus">
+        update t_pc_user_give_item set is_active=#{status} where id=#{id}
+    </update>
+</mapper>

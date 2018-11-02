@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.CarrieroperatorDAO">
+    <resultMap id="carrieroperatorMap" type="com.dwsj.vo.CarrieroperatorVo"></resultMap>
+    <sql id="search">
+        <if test="#{searchVal!=null} and #{searchVal!=''}">
+            and (bcr like concat('%${searchVal}%')
+            or bcr_phone like concat ('%${searchVal}%'))
+        </if>
+    </sql>
+    <select id="getById" resultMap="carrieroperatorMap" parameterType="long">
+        select * from t_carrieroperator where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_carrieroperator where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="carrieroperatorMap">
+        select * from t_carrieroperator  where pc_user_id=#{id} and kehu_id=#{kehuId} <include refid="search"></include>  order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="carrieroperatorMap">
+        select * from t_carrieroperator
+    </select>
+    <select id="getInfoBySid" resultMap="carrieroperatorMap">
+        select * from t_carrieroperator where sid = #{sid}
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_carrieroperator where pc_user_id=#{id} and kehu_id=#{kehuId}  <include refid="search"></include>
+    </select>
+    <insert id="save" parameterType="carrieroperatorVo">
+        <selectKey keyProperty="id" order="AFTER" resultType="long">
+            SELECT LAST_INSERT_ID() as id
+        </selectKey>
+        insert into t_carrieroperator (pc_user_id, bcr, bcr_phone, url, is_active, create_time,sid,head_img,kehu_id) values ( #{pcUserId}, #{bcr}, #{bcrPhone}, #{url}, #{isActive}, now(),#{sid},#{headImg},#{kehuId})
+    </insert>
+    <update id="updateStatus">
+        update t_carrieroperator set is_active=#{status} where id=#{id}
+    </update>
+    <update id="updateStatusBySid">
+        update t_carrieroperator set is_active=#{status} where sid=#{sid}
+    </update>
+    <update id="updateUrl">
+        update t_carrieroperator set url=#{url} where id=#{id}
+    </update>
+    <update id="update">
+        update t_carrieroperator set
+        bcr = #{bcr},
+        bcr_phone = #{bcrPhone},
+        url = #{url}
+        where id = #{id}
+    </update>
+</mapper>

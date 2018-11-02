@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.FindPhoneDAO">
+    <resultMap id="findPhoneMap" type="com.dwsj.vo.FindPhoneVo"></resultMap>
+    <sql id="search">
+        <if test="#{searchVal!=null} and #{searchVal!=''}">
+            and (bcr like concat('%${searchVal}%')
+            or bcr_phone like concat ('%${searchVal}%'))
+        </if>
+    </sql>
+    <select id="getById" resultMap="findPhoneMap" parameterType="long">
+        select * from t_find_phone where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_find_phone where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="findPhoneMap">
+        select * from t_find_phone where pc_user_id=#{id} and kehu_id=#{kehuId}   <include refid="search"/> order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getFindPhoneInfo" resultMap="findPhoneMap">
+        select * from t_find_phone where bcr_phone=#{bcrPhone} and bcr=#{bcr} limit 1
+    </select>
+    <select id="listAll" resultMap="findPhoneMap">
+        select * from t_find_phone
+    </select>
+    <select id="getCnt" resultType="int">
+        select count(id) from t_find_phone where  bcr_phone=#{bcrPhone} and bcr=#{bcr} and pc_user_id=#{pcUserId}
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_find_phone where pc_user_id=#{id}  and kehu_id=#{kehuId}   <include refid="search"/>
+    </select>
+    <insert id="save" parameterType="findPhoneVo">
+        insert into t_find_phone (pc_user_id, bcr, bcr_phone, is_active, create_time,data,kehu_id) values ( #{pcUserId},#{bcr},#{bcrPhone},#{isActive},now(),#{data},#{kehuId})
+    </insert>
+</mapper>

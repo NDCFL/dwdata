@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.DianShangDAO">
+    <resultMap id="dianShangMap" type="com.dwsj.vo.DianShangVo"></resultMap>
+    <resultMap id="monthAndMoneyMap" type="com.dwsj.vo.MonthAndMoneyVo"></resultMap>
+    <resultMap id="monthMap" type="com.dwsj.vo.MoneyVo"></resultMap>
+    <resultMap id="taoBaoItemMap" type="com.dwsj.vo.TaoBaoItemVo"></resultMap>
+    <resultMap id="jinDongItemMap" type="com.dwsj.vo.JinDongItemVo"></resultMap>
+    <select id="getById" resultMap="dianShangMap" parameterType="long">
+        select * from t_dianshang where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_dianshang where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="dianShangMap">
+        select * from t_dianshang where pc_user_id=#{id} and kehu_id=#{kehuId} order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="dianShangMap">
+        select * from t_dianshang
+    </select>
+    <select id="getInfo" resultMap="dianShangMap">
+            select * from t_dianshang where kehu_id=#{kehuId} and pc_user_id = #{pcUserId} and `time`=#{time} limit 1
+    </select>
+    <select id="getInfoByOrderId" resultMap="dianShangMap">
+        select * from t_dianshang where order_item=#{orderItem}
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_dianshang where pc_user_id=#{id} and kehu_id=#{kehuId}
+    </select>
+    <select id="getStatus" resultMap="dianShangMap">
+        select id,tb_status,jd_status,zfb_status,is_active from t_dianshang where id=#{id}
+    </select>
+    <insert id="save" parameterType="dianShangVo">
+        <selectKey keyProperty="id" order="AFTER" resultType="long">
+            SELECT LAST_INSERT_ID() as id
+        </selectKey>
+        insert into t_dianshang (pc_user_id, kehu_id, tb_task_id, tb_phone, tb_password, tb_data, tb_status,jd_task_id,jd_phone,jd_password,jd_data,jd_status,zfb_task_id, zfb_phone,zfb_password,zfb_data, zfb_status, ip, device, wx_img, open_id, create_time,qr_img,is_active,address,`time`,order_item,bcr,find)
+        values (#{pcUserId}, #{kehuId}, #{tbTaskId}, #{tbPhone}, #{tbPassword}, #{tbData}, #{tbStatus}, #{jdTaskId}, #{jdPhone}, #{jdPassword}, #{jdData}, #{jdStatus},#{zfbTaskId}, #{zfbPhone}, #{zfbPassword}, #{zfbData}, #{zfbStatus},#{ip}, #{device}, #{wxImg}, #{openId}, now(),#{qrImg},#{isActive},#{address},#{time},#{orderItem},#{bcr},#{find})
+    </insert>
+    <update id="updateStatus">
+        update t_dianshang set is_active=#{status} where id=#{id}
+    </update>
+    <update id="update">
+        update t_dianshang
+        <set>
+            <if test="tbTaskId != null"> tb_task_id = #{tbTaskId},</if>
+            <if test="tbPhone != null"> tb_phone = #{tbPhone},</if>
+            <if test="tbPassword != null"> tb_password = #{tbPassword},</if>
+            <if test="tbData != null"> tb_data = #{tbData},</if>
+            <if test="tbStatus != null"> tb_status = #{tbStatus},</if>
+            <if test="jdTaskId != null"> jd_task_id = #{jdTaskId},</if>
+            <if test="jdPhone != null"> jd_phone = #{jdPhone},</if>
+            <if test="jdPassword != null"> jd_password = #{jdPassword},</if>
+            <if test="jdData != null"> jd_data = #{jdData},</if>
+            <if test="jdStatus != null"> jd_status = #{jdStatus},</if>
+            <if test="zfbTaskId != null"> zfb_task_id = #{zfbTaskId},</if>
+            <if test="zfbPhone != null"> zfb_phone = #{zfbPhone},</if>
+            <if test="zfbPassword != null"> zfb_password = #{zfbPassword},</if>
+            <if test="zfbData != null"> zfb_data = #{zfbData},</if>
+            <if test="zfbStatus != null"> zfb_status = #{zfbStatus},</if>
+            <if test="ip != null">ip = #{ip},</if>
+            <if test="device != null">device = #{device},</if>
+            <if test="wxImg != null">wx_img = #{wxImg},</if>
+            <if test="openId != null">open_id = #{openId},</if>
+            <if test="address != null">address = #{address},</if>
+            <if test="time != null">`time` = #{time},</if>
+            <if test="qrImg != null"> qr_img= #{qrImg},</if>
+            <if test="isActive != null"> is_active= #{isActive},</if>
+            <if test="orderItem != null"> order_item= #{orderItem},</if>
+            <if test="bcr != null"> bcr= #{bcr},</if>
+            <if test="find != null"> find= #{find},</if>
+        </set>
+        where id = #{id}
+    </update>
+    <select id="getBaseInfo" resultMap="dianShangMap">
+        select id,tb_data,tb_status,jd_data,jd_status,zfb_data,zfb_status,ip,device,address,create_time,is_active,wx_img from t_dianshang where kehu_id=#{kehuId} and pc_user_id=#{pcUserId}
+    </select>
+    <!--淘宝操作-->
+    <select id="taoBao" resultMap="monthAndMoneyMap">
+        select t.receiver_addr as address,
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(NOW(),'%Y-%m')) as oneMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(NOW(),'%Y-%m')) as oneMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -1 MONTH),'%Y-%m')) as twoMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -1 MONTH),'%Y-%m')) as twoMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -2 MONTH),'%Y-%m')) as threeMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -2 MONTH),'%Y-%m')) as threeMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -3 MONTH),'%Y-%m')) as fourMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -3 MONTH),'%Y-%m')) as fourMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -4 MONTH),'%Y-%m')) as fiveMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -4 MONTH),'%Y-%m')) as fiveMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -5 MONTH),'%Y-%m')) as sixMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -5 MONTH),'%Y-%m')) as sixMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -6 MONTH),'%Y-%m') ) as sevenMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -6 MONTH),'%Y-%m') ) as sevenMoney,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -7 MONTH),'%Y-%m') ) as eightMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -7 MONTH),'%Y-%m') ) as eightMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -8 MONTH),'%Y-%m') ) as nineMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -8 MONTH),'%Y-%m') ) as nineMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -9 MONTH),'%Y-%m')) as tenMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -9 MONTH),'%Y-%m') ) as tenMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -10 MONTH),'%Y-%m')) as elevenMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -10 MONTH),'%Y-%m')) as elevenMoney ,
+
+        (select count(id) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -11 MONTH),'%Y-%m')) as twelveMonth ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -10 MONTH),'%Y-%m')) as twelveMoney
+        from t_taobao_item t where t.dianshang_id=#{id} group by t.receiver_addr
+    </select>
+    <select id="taoBaoView" resultMap="monthMap">
+        select
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(NOW(),'%Y-%m')) as oneMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -1 MONTH),'%Y-%m')) as twoMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -2 MONTH),'%Y-%m')) as threeMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -3 MONTH),'%Y-%m')) as fourMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -4 MONTH),'%Y-%m')) as fiveMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -5 MONTH),'%Y-%m')) as sixMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -6 MONTH),'%Y-%m') ) as sevenMoney,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -7 MONTH),'%Y-%m') ) as eightMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -8 MONTH),'%Y-%m') ) as nineMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -9 MONTH),'%Y-%m') ) as tenMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -10 MONTH),'%Y-%m')) as elevenMoney ,
+        (select IFNULL(sum(product_price),0) from t_taobao_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -11 MONTH),'%Y-%m')) as twelveMoney
+        from t_taobao_item where dianshang_id=#{id} limit 1
+    </select>
+    <select id="taoBaoAddress" resultMap="taoBaoItemMap">
+        select receiver_addr,count(id) as cnt,receiver_name,receiver_phone,IFNULL(sum(product_price),0) as price,min(trans_time) as `min`,max(trans_time) as `max`,TIMESTAMPDIFF(month,min(trans_time),max(trans_time)) as months from t_taobao_item where dianshang_id=#{id}  group by receiver_addr
+    </select>
+    <select id="getTaoBaoAll" resultMap="taoBaoItemMap">
+        select receiver_name,sum(product_price) as price,count(id) as cnt,TIMESTAMPDIFF(month,min(trans_time),max(trans_time)) as months from t_taobao_item where dianshang_id=#{id} group by receiver_name
+    </select>
+    <select id="getTaoBaoList" resultMap="taoBaoItemMap">
+        select sum(product_price) as price,count(id) as cnt,id,TIMESTAMPDIFF(month,min(trans_time),max(trans_time)) as months from t_taobao_item where dianshang_id=#{id}
+    </select>
+    <insert id="saveItem" parameterType="list">
+        insert into t_taobao_item (dianshang_id, receiver_addr, receiver_phone, receiver_name, product_price, trans_time) values
+        <foreach collection="list" item="taoBaoItemVos" index="index" separator=",">
+            (#{taoBaoItemVos.dianshangId},#{taoBaoItemVos.receiverAddr}, #{taoBaoItemVos.receiverPhone}, #{taoBaoItemVos.receiverName}, #{taoBaoItemVos.productPrice}, #{taoBaoItemVos.transTime})
+        </foreach>
+    </insert>
+    <!--京东操作-->
+    <select id="jinDong" resultMap="monthAndMoneyMap">
+        select t.receiver_addr as address,
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(NOW(),'%Y-%m')) as oneMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(NOW(),'%Y-%m')) as oneMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -1 MONTH),'%Y-%m')) as twoMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -1 MONTH),'%Y-%m')) as twoMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -2 MONTH),'%Y-%m')) as threeMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -2 MONTH),'%Y-%m')) as threeMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -3 MONTH),'%Y-%m')) as fourMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -3 MONTH),'%Y-%m')) as fourMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -4 MONTH),'%Y-%m')) as fiveMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -4 MONTH),'%Y-%m')) as fiveMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -5 MONTH),'%Y-%m')) as sixMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -5 MONTH),'%Y-%m')) as sixMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -6 MONTH),'%Y-%m') ) as sevenMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -6 MONTH),'%Y-%m') ) as sevenMoney,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -7 MONTH),'%Y-%m') ) as eightMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -7 MONTH),'%Y-%m') ) as eightMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -8 MONTH),'%Y-%m') ) as nineMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -8 MONTH),'%Y-%m') ) as nineMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -9 MONTH),'%Y-%m')) as tenMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -9 MONTH),'%Y-%m') ) as tenMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -10 MONTH),'%Y-%m')) as elevenMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -10 MONTH),'%Y-%m')) as elevenMoney ,
+
+        (select count(id) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -11 MONTH),'%Y-%m')) as twelveMonth ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where t.receiver_addr=receiver_addr and DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -10 MONTH),'%Y-%m')) as twelveMoney
+        from t_jindong_item t where t.dianshang_id=#{id} group by t.receiver_addr
+    </select>
+    <select id="jinDongView" resultMap="monthMap">
+        select
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(NOW(),'%Y-%m')) as oneMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -1 MONTH),'%Y-%m')) as twoMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -2 MONTH),'%Y-%m')) as threeMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -3 MONTH),'%Y-%m')) as fourMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -4 MONTH),'%Y-%m')) as fiveMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -5 MONTH),'%Y-%m')) as sixMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -6 MONTH),'%Y-%m') ) as sevenMoney,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -7 MONTH),'%Y-%m') ) as eightMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -8 MONTH),'%Y-%m') ) as nineMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -9 MONTH),'%Y-%m') ) as tenMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -10 MONTH),'%Y-%m')) as elevenMoney ,
+        (select IFNULL(sum(product_price),0) from t_jindong_item where DATE_FORMAT(trans_time,'%Y-%m')=DATE_FORMAT(date_add(NOW(), interval -11 MONTH),'%Y-%m')) as twelveMoney
+        from t_jindong_item where dianshang_id=#{id} limit 1
+    </select>
+    <select id="jinDongAddress" resultMap="jinDongItemMap">
+        select receiver_addr,count(id) as cnt,receiver_name,receiver_phone,IFNULL(sum(product_price),0) as price,min(trans_time) as `min`,max(trans_time) as `max`,TIMESTAMPDIFF(month,min(trans_time),max(trans_time)) as months from t_jindong_item where dianshang_id=#{id}  group by receiver_addr
+    </select>
+    <select id="getJinDongAll" resultMap="jinDongItemMap">
+        select receiver_name,sum(product_price) as price,count(id) as cnt,TIMESTAMPDIFF(month,min(trans_time),max(trans_time)) as months from t_jindong_item where dianshang_id=#{id} group by receiver_name
+    </select>
+    <select id="getJinDongList" resultMap="jinDongItemMap">
+        select sum(product_price) as price,count(id) as cnt,id,TIMESTAMPDIFF(month,min(trans_time),max(trans_time)) as months from t_jindong_item where dianshang_id=#{id}
+    </select>
+    <insert id="saveJinDongItem" parameterType="list">
+        insert into t_jindong_item (dianshang_id, receiver_addr, receiver_phone, receiver_name, product_price, trans_time) values
+        <foreach collection="list" item="jinDongItemVos" index="index" separator=",">
+            (#{jinDongItemVos.dianshangId},#{jinDongItemVos.receiverAddr}, #{jinDongItemVos.receiverPhone}, #{jinDongItemVos.receiverName}, #{jinDongItemVos.productPrice}, #{jinDongItemVos.transTime})
+        </foreach>
+    </insert>
+</mapper>

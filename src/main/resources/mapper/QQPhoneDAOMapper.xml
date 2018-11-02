@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.QQPhoneDAO">
+    <resultMap id="qqPhoneMap" type="com.dwsj.vo.QQPhoneVo"></resultMap>
+    <sql id="search">
+        <if test="#{searchVal!=null} and #{searchVal!=''}">
+            and (bcr like concat('%${searchVal}%')
+            or qq like concat ('%${searchVal}%'))
+        </if>
+    </sql>
+    <select id="getById" resultMap="qqPhoneMap" parameterType="long">
+        select * from t_qq_phone where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_qq_phone where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="qqPhoneMap">
+        select * from t_qq_phone where pc_user_id=#{id} and kehu_id=#{kehuId} <include refid="search"/> order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="qqPhoneMap">
+        select * from t_qq_phone where pc_user_id=#{pcUserId}
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_qq_phone where pc_user_id=#{id} <include refid="search"/>
+    </select>
+    <select id="getInfoByQQ" parameterType="string" resultMap="qqPhoneMap">
+        select * from t_qq_phone where qq=#{qq} order by create_time desc limit 1
+    </select>
+    <select id="getInfoByHash" parameterType="string">
+        select * from t_qq_phone where hash_val=#{hashVal}
+    </select>
+    <select id="getInfo">
+        select * from t_qq_phone where pc_user_id=#{pcUserId} and kehu_id=#{kehuId}
+    </select>
+    <insert id="save" parameterType="qqPhoneVo">
+        insert into t_qq_phone ( pc_user_id, kehu_id, bcr, qq, hash_val, is_active, create_time,nick_name,phone) values (#{pcUserId}, #{kehuId}, #{bcr}, #{qq}, #{hashVal}, #{isActive},now(),#{nickName},#{phone})
+    </insert>
+    <update id="updateStatus">
+        update t_qq_phone set is_active=#{status} where id=#{id}
+    </update>
+    <update id="update">
+        update t_qq_phone
+        <set>
+            <if test="pcUserId!=null">pc_user_id = #{pcUserId},</if>
+            <if test="kehuId!=null">kehu_id = #{kehuId},</if>
+            <if test="bcr!=null">bcr = #{bcr},</if>
+            <if test="qq!=null">qq = #{qq},</if>
+            <if test="hashVal!=null">hash_val = #{hashVal},</if>
+            <if test="data!=null">`data` = #{data},</if>
+            <if test="isActive!=null">is_active = #{isActive},</if>
+            <if test="createTime!=null">create_time = #{createTime},</if>
+            <if test="bcr!=null">bcr = #{bcr},</if>
+            <if test="nickName!=null">nick_name = #{nickName},</if>
+            <if test="phone!=null">phone = #{phone},</if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

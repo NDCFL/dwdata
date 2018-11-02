@@ -1,0 +1,222 @@
+.search_box{
+    display: flex;
+    width: 1040px;
+    height: 134px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search_left{
+    width: 60%;
+    height:134px;
+}
+.search_left label{
+    margin-left: 20px;
+}
+
+.input_top{
+    padding:10px;
+    height: 35px;
+    margin-top: 12px;
+
+}
+.input_top input{
+    margin-left: 10px;
+    background: #f1eeee;
+    border-radius: 4px;
+    padding: 10px;
+    width: 160px;
+    display: inline-block;
+}
+
+.input_bottom{
+    height: 35px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.input_bottom input{
+    margin-left: 10px;
+    background: #f1eeee;
+    border-radius: 4px;
+    padding: 10px;
+    width: 160px;
+    display: inline-block;
+}
+
+.search_right{
+    width: 40%;
+    height: 134px;
+}
+.search_right input{
+    width: 144px;
+    height: 36px;
+    border-radius: 6px;
+    margin: 12% auto;
+    margin-right: 13%;
+    display: block;
+    background: url(../img/icon_seach.png);
+    background-size: cover;
+}
+
+.content{
+    width: 1040px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.click_right{
+    width: 40%;
+    float: right;
+
+}
+
+.click_right a{
+    display: block;
+    width: 84px;
+    line-height: 28px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #fff;
+    float: right;
+    margin-top: 35px;
+}
+
+.click_right a:first-child{
+    background: #5295E3;
+}
+
+.click_right a:last-child{
+    background: #4DCA55;
+}
+
+.mianban{
+    clear: both;
+    width: 94%;
+    margin: 3%;
+    background: white;
+
+}
+
+.crefit_content{
+    clear: both;
+    width: 96%;
+    background: #F0F0F0;
+    margin: 10px auto;
+
+}
+
+.phone_title{
+    height: 10px;
+    padding: 17px;
+    color: #515151;
+    font-size: 15px;
+}
+
+.menu_title{
+    width: 100%;
+    line-height: 50px;
+    border: solid 1px rgb(240, 240, 240);
+}
+
+.menu_title .down{
+    padding-left: 20px;
+    background: url(../img/icon_down@2x.png) center center no-repeat;
+}
+
+.menu_title p{
+    padding-left: 10px;
+    color: #666;
+    background: #F0F0F0;
+
+}
+
+.datetable{
+    background: #fff;
+    border: solid 1px #666666;
+    width: 98%;
+    margin:10px auto;
+    font-size: 14px;
+
+}
+.datetable th{
+     background: #EEEFF3;
+     width: 155px;
+     border: solid 1px #E1E1E1;
+ }
+.datetable tr{
+    border: solid 1px #E1E1E1;
+}
+
+.bgc{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 20%, 0.68);
+    top: 63px;
+}
+
+.txm{
+    width: 22%;
+    background: #fff;
+    position: absolute;
+    top: 39%;
+    left: 42%;
+    border-radius: 6px;
+}
+
+.txm .verify{
+    background: #cdc9c9;
+    height: 69px;
+    border-radius: 6px;
+    width: 90%;
+    margin: 15px 5%;
+}
+
+.txm img{
+    display: block;
+    width:258px;
+    height: 90px;
+    margin: 0px auto;
+}
+
+.subbtn{
+    width: 80%;
+    height: 40px;
+    display: block;
+    border-radius: 6px;
+    margin: 35px auto;
+    background: #1e60bb;
+    color: #fff;
+    font-size: 19px;
+}
+
+.yzm{
+    width: 22%;
+    background: #fff;
+    position: absolute;
+    top: 39%;
+    left: 42%;
+    border-radius: 6px;
+}
+
+.yzm .sms_verify{
+    background: #cdc9c9;
+    height: 69px;
+    border-radius: 6px;
+    width: 90%;
+    margin: 15px 5%;
+}
+.fivesms{
+    display: block;
+    width: 92%;
+    height: 62px;
+    background: #cdc9c9;
+    margin: 15px auto;
+    border-radius: 6px;
+}

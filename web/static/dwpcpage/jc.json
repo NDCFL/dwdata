@@ -1,0 +1,38 @@
+{
+  "status": 1,
+  "msg": "",
+  "title": "平台使用教程",
+  "id": 8,
+  "start": 0,
+  "data": [{
+    "alt": "添加客户",
+    "pid": 109,
+    "src": "/static/dwpcpage/images/1.png",
+    "thumb": ""
+  },
+    {
+      "alt": "点击卡片进入功能点",
+      "pid": 110,
+      "src": "/static/dwpcpage/images/2.png",
+      "thumb": ""
+    },
+    {
+      "alt": "负债查询",
+      "pid": 111,
+      "src": "/static/dwpcpage/images/3.png",
+      "thumb": ""
+    },
+    {
+      "alt": "充值方式",
+      "pid": 112,
+      "src": "/static/dwpcpage/images/4.png",
+      "thumb": ""
+    },
+    {
+      "alt": "问题解答，领取福利",
+      "pid": 113,
+      "src": "/static/dwpcpage/images/5.png",
+      "thumb": ""
+    }
+  ]
+}

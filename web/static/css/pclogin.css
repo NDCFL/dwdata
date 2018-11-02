@@ -1,0 +1,97 @@
+.welcomefont {
+    font-family: '微软雅黑 Oblique', '微软雅黑 Regular', '微软雅黑';
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.first{
+    width: 100%;height: auto;position: absolute;top: 10%
+}
+.bigdiv{
+    border: solid 2px #fff;text-align: center;margin: auto; border-radius: 5px;height: auto;width: 30%;margin-left: 35%
+}
+.loginbut{
+    background-color: #0583ce;font-size: 28px;width: 100%;height: 100%;border: none;color: #fff;border-radius: 5px
+}
+.codediv{
+    width: 90%;height: 58px;border: none;font-size: 20px; font-weight: normal; color: rgb(153, 153, 153);outline: none
+}
+.alldiv{
+    height: 100%;border: solid 1px rgba(13, 37, 80, 1);width: 400px;text-align: center;margin: auto
+}
+.bigtitle {
+    margin-top:20px;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: #fff;
+}
+.smalltitle {
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+}
+.zhuce {
+    font-family: '微软雅黑';font-weight: 400;font-style: normal;color: #0D2550;font-size: 18px;line-height: 40px
+}
+.yzm{
+    font-style: normal;font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight: 700; color: #0D2551;font-size: 18px;line-height: 60px;
+}
+.phone{
+    width: 100%;height: 58px;border: none;font-size: 20px; font-weight: normal; color:rgba(13, 37, 80, 1) ;outline: none;font-weight: bold;
+}
+input::-webkit-input-placeholder{color:rgb(153, 153, 153);font-weight: normal}
+.password{
+    width: 100%;height: 58px;border: none;font-size: 20px; font-weight: normal; color: rgba(13, 37, 80, 1);outline: none;font-weight: bold;
+}
+.maintitle{
+    color: #FFFFFF;font-style: normal;font-weight: 700;font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+}
+.beizhu::-webkit-input-placeholder{
+    color:rgb(153, 153, 153);font-weight: normal;
+    font-size:20px;
+}
+.active_div{
+    border-bottom: solid 5px #0583ce;
+}
+.active_xd{
+    border: solid 1px #0583ce;
+}
+.xd{
+    width: 276px;
+    height: 400px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: solid 1px rgba(228, 228, 228, 1);
+}
+.txy{
+    font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight: 700;font-style: normal;font-size: 14px;color: #0F88EB;float: left;padding-top: 5px;padding-right: 5px
+}
+.txy_name{
+    float: right;font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';font-weight: 700;font-style: normal;font-size: 14px;color: #1E1E1E;padding-top: 5px;padding-right: 5px
+}
+.xd_show{
+    display: block;
+}
+.xd_hide{
+    display: none;
+}
+.xdinfo_show{
+    display: block;
+}
+.xdinfo_hide{
+    display: none;
+}
+.pwd::-webkit-input-placeholder{
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+}

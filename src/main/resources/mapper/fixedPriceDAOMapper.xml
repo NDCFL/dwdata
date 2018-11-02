@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.FixedPriceDAO">
+    <resultMap id="fixedPriceMap" type="com.dwsj.vo.FixedPriceVo"></resultMap>
+    <select id="getById" resultMap="fixedPriceMap" parameterType="long">
+        select * from t_fixed_price where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_fixed_price where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="fixedPriceMap">
+        select * from t_fixed_price  limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="fixedPriceMap">
+        select * from t_fixed_price where id!=0
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_fixed_price
+    </select>
+    <insert id="save" parameterType="fixedPriceVo">
+        insert into t_fixed_price (name,introduce,price,remark) values ( #{name},#{introduce},#{price}，#{remark})
+    </insert>
+    <update id="update">
+        update t_fixed_price set
+        name = #{name},
+        introduce = #{introduce},
+        price = #{price},
+        remark = #{remark}
+        where id = #{id}
+    </update>
+</mapper>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.QQPhoneListDAO">
+    <resultMap id="qqPhoneMap" type="com.dwsj.vo.QQPhoneListVo"></resultMap>
+    <sql id="search">
+        <if test="#{searchVal!=null} and #{searchVal!=''}">
+            and (telename like concat('%${searchVal}%')
+            or telephone like concat('%${searchVal}%') )
+        </if>
+    </sql>
+    <select id="getById" resultMap="qqPhoneMap" parameterType="long">
+        select * from t_qq_phone_list where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_qq_phone_list where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="qqPhoneMap">
+        select * from t_qq_phone_list where qq_phone_id=#{id}  <include refid="search"></include> order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="qqPhoneMap">
+        select * from t_qq_phone_list
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_qq_phone_list where qq_phone_id=#{id}  <include refid="search"></include>
+    </select>
+    <select id="getList" resultMap="qqPhoneMap">
+        select * from t_qq_phone_list where qq_phone_id=#{id}
+    </select>
+    <insert id="save" parameterType="qqPhoneVo">
+        insert into t_qq_phone_list (pc_user_id, qq_phone_id, telename, telephone, hmfx, txjlfx, create_time) values (#{pcUserId}, #{qqPhoneId}, #{telename}, #{telephone}, #{hmfx}, #{txjlfx}, #{createTime})
+    </insert>
+    <insert id="saveList" parameterType="list">
+        insert into t_qq_phone_list (pc_user_id, qq_phone_id, telename, telephone, hmfx, txjlfx, create_time) values
+        <foreach collection="list" item="qqPhoneListVos" index="index" separator=",">
+            (#{qqPhoneListVos.pcUserId},#{qqPhoneListVos.qqPhoneId}, #{qqPhoneListVos.telename}, #{qqPhoneListVos.telephone}, #{qqPhoneListVos.hmfx}, #{qqPhoneListVos.txjlfx}, #{qqPhoneListVos.createTime})
+        </foreach>
+    </insert>
+</mapper>

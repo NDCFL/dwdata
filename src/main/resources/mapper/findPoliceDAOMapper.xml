@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.FindPoliceDAO">
+    <resultMap id="findPoliceMap" type="com.dwsj.vo.FindPoliceVo"></resultMap>
+    <sql id="search">
+        <if test="#{searchVal!=null} and #{searchVal!=''}">
+            and (bcr like concat('%${searchVal}%')
+            or bcr_idcard like concat ('%${searchVal}%'))
+        </if>
+    </sql>
+    <select id="getById" resultMap="findPoliceMap" parameterType="long">
+        select * from t_find_police where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_find_police where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="findPoliceMap">
+        select * from t_find_police where pc_user_id=#{id} and kehu_id=#{kehuId} <include refid="search"/> order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getFindPoliceInfo" resultMap="findPoliceMap">
+        select * from t_find_police where bcr_idcard=#{bcrIdcard} and bcr=#{bcr} limit 1
+    </select>
+    <select id="listAll" resultMap="findPoliceMap">
+        select * from t_find_police
+    </select>
+    <select id="getCnt" resultType="int">
+        select count(id) from t_find_police where bcr_idcard=#{bcrIdcard} and bcr=#{bcr} and pc_user_id=#{pcUserId}
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_find_police where pc_user_id=#{id}  and kehu_id=#{kehuId}   <include refid="search"/>
+    </select>
+    <insert id="save" parameterType="findPoliceVo">
+        <selectKey keyProperty="id" order="AFTER" resultType="long">
+            SELECT LAST_INSERT_ID() as id
+        </selectKey>
+        insert into t_find_police (pc_user_id, bcr, bcr_idcard, is_active, create_time,data,head_img,kehu_id) values ( #{pcUserId},#{bcr},#{bcrIdcard},#{isActive},now(),#{data},#{headImg},#{kehuId})
+    </insert>
+</mapper>

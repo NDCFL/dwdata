@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.GeneralQueryDAO">
+    <resultMap id="generalQueryMap" type="com.dwsj.vo.GeneralQueryVo"></resultMap>
+    <select id="getById" resultMap="generalQueryMap" parameterType="long">
+        select * from t_general_query where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_general_query where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="generalQueryMap">
+        select * from t_general_query  limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="generalQueryMap">
+        select * from t_general_query
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_general_query
+    </select>
+    <insert id="save" parameterType="generalQueryVo">
+        <selectKey keyProperty="id" order="AFTER" resultType="long">
+            SELECT LAST_INSERT_ID() as id
+        </selectKey>
+        insert into t_general_query (create_time, kehu_id, pc_user_id, pzy_data, jsd_data, qlm_data, grx_data, mifang_data, jjy_data, yxy_data, wyjybao_data, sxy_data, zcj_data, jdb_data, xys_data) values (#{createTime}, #{kehuId}, #{pcUserId}, #{pzyData}, #{jsdData}, #{qlmData}, #{grxData}, #{mifangData}, #{jjyData}, #{yxyData}, #{wyjybaoData}, #{sxyData}, #{zcjData}, #{jdbData}, #{xysData})
+    </insert>
+    <select id="selectByUserIdAndKeHuId" resultMap="generalQueryMap">
+      select * from t_general_query where pc_user_id = #{pcUserId} and kehu_id=#{kehuId} order by create_time desc limit 1
+    </select>
+    <select id="getInfoById" resultType="long">
+        select id from t_general_query where pc_user_id = #{pcUserId} and kehu_id=#{kehuId} order by create_time desc limit 1
+    </select>
+    <update id="update">
+        update t_general_query
+        <set>
+            <if test="pzyData != null"> pzy_data = #{pzyData},</if>
+            <if test="jsdData != null"> jsd_data = #{jsdData},</if>
+            <if test="qlmData != null"> qlm_data = #{qlmData},</if>
+            <if test="grxData != null"> grx_data = #{grxData},</if>
+            <if test="mifangData != null"> mifang_data = #{mifangData},</if>
+            <if test="jjyData != null"> jjy_data = #{jjyData},</if>
+            <if test="yxyData != null"> yxy_data = #{yxyData},</if>
+            <if test="wyjybaoData != null"> wyjybao_data = #{wyjybaoData},</if>
+            <if test="sxyData != null"> sxy_data = #{sxyData},</if>
+            <if test="zcjData != null"> zcj_data = #{zcjData},</if>
+            <if test="jdbData != null"> jdb_data = #{jdbData},</if>
+            <if test="xysData != null"> xys_data = #{xysData},</if>
+            <if test="createTime != null"> create_time = #{createTime},</if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

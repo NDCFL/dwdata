@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.ConsumeHistoryDAO">
+    <resultMap id="consumeHistoryMap" type="com.dwsj.vo.ConsumeHistoryVo"></resultMap>
+    <select id="getById" resultMap="consumeHistoryMap" parameterType="long">
+        select * from t_consume_history where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_consume_history where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="consumeHistoryMap">
+        select * from t_consume_history where 1=1 <if test="id!=null">and pc_user_id=#{id}</if> order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="consumeHistoryMap">
+        select * from t_consume_history
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_consume_history where 1=1 <if test="id!=null">and pc_user_id=#{id}</if>
+    </select>
+    <insert id="save" parameterType="consumeHistoryVo">
+        insert into t_consume_history ( create_time, pc_user_id, amount, remark,bcr,is_active) values (now() , #{pcUserId}, #{amount}, #{remark},#{bcr},#{isActive})
+    </insert>
+</mapper>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.JiFenDAO">
+    <resultMap id="jiFenMap" type="com.dwsj.vo.JiFenVo"></resultMap>
+    <resultMap id="select2Map" type="com.dwsj.vo.Select2Vo"></resultMap>
+    <sql id="search">
+        <if test="#{searchVal!=null} and #{searchVal!=''}">
+            and (jifen like concat('%${searchVal}%')
+            or money like concat ('%${searchVal}%')
+            or is_active like concat ('%${searchVal}%'))
+        </if>
+    </sql>
+    <select id="getById" resultMap="jiFenMap" parameterType="long">
+        select * from t_jifen where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_jifen where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="jiFenMap">
+        select * from t_jifen where 1=1 <include refid="search"/> order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getJiFen" resultMap="jiFenMap">
+        select * from t_jifen
+    </select>
+    <select id="listAll" resultMap="jiFenMap">
+        select * from t_jifen
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_jifen where 1=1 <include refid="search"/>
+    </select>
+    <select id="getJiFenInfo" parameterType="int" resultMap="jiFenMap">
+        select * from t_jifen where money=#{amount}
+    </select>
+    <insert id="save" parameterType="jiFenVo">
+        insert into t_jifen ( money,jifen,is_active,create_time,zs_ji_fen,remark,days) values ( #{money},#{jifen},#{isActive},now(),#{zsJiFen},#{remark},#{days})
+    </insert>
+    <update id="updateStatus">
+        update t_jifen set is_active=#{status} where id=#{id}
+    </update>
+    <update id="update">
+        update t_jifen
+        <set>
+            <if test="money!=null">money = #{money},</if>
+            <if test="jifen!=null">jifen = #{jifen},</if>
+            <if test="zsJiFen!=null">zs_ji_fen = #{zsJiFen},</if>
+            <if test="remark!=null">remark = #{remark},</if>
+            <if test="days!=null">days = #{days},</if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

@@ -1,0 +1,2725 @@
+{
+  "addresses": [{
+    "city": "武汉市",
+    "isDefaultAddress": true,
+    "province": "湖北省",
+    "receiverAddr": "湖北省 武汉市 洪山区 洪山街道洪达巷鸿达苑",
+    "receiverCellPhone": "86-1770*****68",
+    "receiverName": "刘鸿达苑",
+    "receiverPhone": "86-1770*****68",
+    "receiverTitle": "洪山区洪山街道",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "000000"
+  }, {
+    "city": "荆州市",
+    "isDefaultAddress": false,
+    "province": "湖北省",
+    "receiverAddr": "湖北省 荆州市 松滋市 新江口镇兴业路新荥驾校",
+    "receiverCellPhone": "86-1770*****68",
+    "receiverName": "刘少怪",
+    "receiverPhone": "86-1770*****68",
+    "receiverTitle": "松滋市新江口镇",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "434200"
+  }, {
+    "isDefaultAddress": false,
+    "receiverAddr": "湖南省 长沙市 长沙县星沙方略城市广场十栋2221室",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "000000"
+  }, {
+    "city": "荆州市",
+    "isDefaultAddress": false,
+    "province": "湖北省",
+    "receiverAddr": "湖北省 荆州市 松滋市 纸厂河镇欣欣街红都酒店",
+    "receiverCellPhone": "86-17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "86-17702718868",
+    "receiverTitle": "松滋市纸厂河镇",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "434200"
+  }, {
+    "city": "武汉市",
+    "isDefaultAddress": false,
+    "province": "湖北省",
+    "receiverAddr": "湖北省 武汉市 江汉区 北湖街街道北湖街街道 北湖正街中百仓储左边巷子进去人智里43栋411号房",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "周佳伟",
+    "receiverPhone": "17702718868",
+    "receiverTitle": "江汉区北湖街街道",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "430015"
+  }, {
+    "city": "武汉市",
+    "isDefaultAddress": false,
+    "province": "湖北省",
+    "receiverAddr": "湖北省 武汉市 洪山区 洪山街道武汉理工大学南湖新校区 南四宿舍",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘博明",
+    "receiverPhone": "17702718868",
+    "receiverTitle": "洪山区洪山街道",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "430070"
+  }, {
+    "isDefaultAddress": false,
+    "receiverAddr": "湖北省 武汉市 洪山区武汉市东湖高新技术开发区喻家湖路12号金地华公馆9栋1303号",
+    "receiverCellPhone": "18107296989",
+    "receiverName": "周家尧",
+    "receiverPhone": "18107296989",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "430000"
+  }, {
+    "city": "广州市",
+    "isDefaultAddress": false,
+    "province": "广东省",
+    "receiverAddr": "广东省 广州市 花都区 狮岭镇益群胡屋沿河5-6号（爱包包）",
+    "receiverCellPhone": "13527792520",
+    "receiverName": "卢妤",
+    "receiverPhone": "13527792520",
+    "receiverTitle": "花都区狮岭镇",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "510800"
+  }, {
+    "city": "武汉市",
+    "isDefaultAddress": false,
+    "province": "湖北省",
+    "receiverAddr": "湖北省 武汉市 江夏区 流芳街道武汉工程大学流芳校区",
+    "receiverCellPhone": "18086436360",
+    "receiverName": "宋涛",
+    "receiverPhone": "18086436360",
+    "receiverTitle": "江夏区流芳街道",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "430200"
+  }, {
+    "city": "荆州市",
+    "isDefaultAddress": false,
+    "province": "湖北省",
+    "receiverAddr": "湖北省 荆州市 松滋市 纸厂河镇欣欣街大地娱乐城（好上好对面）",
+    "receiverCellPhone": "86-15027178900",
+    "receiverName": "刘洪",
+    "receiverPhone": "86-15027178900",
+    "receiverTitle": "松滋市纸厂河镇",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "000000"
+  }, {
+    "isDefaultAddress": false,
+    "receiverAddr": "广东省 广州市 海珠区新港东路114号",
+    "receiverCellPhone": "18666524825",
+    "receiverName": "刘雅萱",
+    "receiverPhone": "18666524825",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "510000"
+  }, {
+    "city": "上海市",
+    "isDefaultAddress": false,
+    "province": "上海",
+    "receiverAddr": "上海 上海市 浦东新区 唐镇云雅路同景苑",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "receiverTitle": "浦东新区唐镇",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "200120"
+  }, {
+    "isDefaultAddress": false,
+    "receiverAddr": "湖北省 武汉市 洪山区珞瑜路1037号华中科技大学东校区韵苑学生公寓23栋331寝室",
+    "receiverCellPhone": "13212713061",
+    "receiverName": "魏文启",
+    "receiverPhone": "13212713061",
+    "updateTime": "2018-07-20 10:44:33",
+    "zipcode": "430074"
+  }],
+  "basicInfo": {
+    "cardCode": "4****************3",
+    "cellPhone": "177****8868",
+    "level": "普通会员",
+    "nickName": "我爱淘淘淘liu",
+    "realName": "刘**",
+    "score": "754",
+    "securityLevel": "高",
+    "updateTime": "2018-07-20 10:44:33",
+    "validateRealName": true
+  },
+  "orders": [{
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "20180717XX1811000004706700",
+      "productName": "邪不压正",
+      "productPrice": "26.90"
+    }],
+    "orderId": "185546379765467484",
+    "shopInfo": {
+      "nick": "淘票票-电影",
+      "shopId": "3935417197"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 33.0,
+    "transTime": "2018-07-17 15:07:44",
+    "updateTime": "2018-07-20 10:44:33"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "中通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "苹果手机取卡针 手机sim卡收纳包 真皮保护套便携防丢钥匙扣 卡套",
+      "productPrice": "16.80",
+      "transTime": "2018-07-09 12:03:11"
+    }, {
+      "productCnt": 1,
+      "productName": "保险服务",
+      "productPrice": "0.00",
+      "transTime": "2018-07-09 12:03:11"
+    }],
+    "orderId": "181171656247467484",
+    "receiverAddr": "湖北省 武汉市 洪山区 洪山街道 洪达巷鸿达苑 ",
+    "receiverCellPhone": "86-17702718868",
+    "receiverName": "刘鸿达苑",
+    "receiverPhone": "86-17702718868",
+    "shopInfo": {
+      "nick": "p点p点go",
+      "shopId": "2889885111",
+      "shopName": "p点p点",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2889885111"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 11.8,
+    "transTime": "2018-07-09 12:03:11",
+    "updateTime": "2018-07-20 10:44:34",
+    "zipcode": "000000"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 4,
+      "productId": "20180708XX1811000000685300",
+      "productName": "我不是药神",
+      "productPrice": "132.00"
+    }],
+    "orderId": "180541099885467484",
+    "shopInfo": {
+      "nick": "淘票票-电影",
+      "shopId": "3935417197"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 132.0,
+    "transTime": "2018-07-08 01:12:46",
+    "updateTime": "2018-07-20 10:44:34"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "20180626XX1811000013954900",
+      "productName": "侏罗纪世界2",
+      "productPrice": "38.00"
+    }],
+    "orderId": "176043459549467484",
+    "shopInfo": {
+      "nick": "淘票票-电影",
+      "shopId": "3935417197"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 38.0,
+    "transTime": "2018-06-26 21:08:31",
+    "updateTime": "2018-07-20 10:44:34"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "自动充值 湖北联通话费10元手机充值10元快充10元 及时到账",
+      "productPrice": "9.98",
+      "transTime": "2018-06-26 20:11:03"
+    }],
+    "orderId": "176029543527467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "v8话费充值专营店",
+      "shopId": "1669256514",
+      "shopName": "v8话费充值专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=1669256514"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 9.98,
+    "transTime": "2018-06-26 20:11:03",
+    "updateTime": "2018-07-20 10:44:34"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "20180625XX1811000001039900",
+      "productName": "超人总动员2",
+      "productPrice": "33.00"
+    }],
+    "orderId": "175590584208467484",
+    "shopInfo": {
+      "nick": "淘票票-电影",
+      "shopId": "3935417197"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 41.0,
+    "transTime": "2018-06-25 10:19:28",
+    "updateTime": "2018-07-20 10:44:34"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "3d眼镜夹片偏光电影院专用 reald三d立体imax电视通用近视眼睛",
+      "productPrice": "35.00",
+      "transTime": "2018-06-23 09:56:47"
+    }],
+    "orderId": "174994522274467484",
+    "receiverAddr": "湖北省 武汉市 洪山区 洪山街道 洪达巷鸿达苑 ",
+    "receiverCellPhone": "86-17702718868",
+    "receiverName": "刘鸿达苑",
+    "receiverPhone": "86-17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "reedoon旗舰店",
+      "shopId": "730229891",
+      "shopName": "reedoon旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=730229891"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 33.0,
+    "transTime": "2018-06-23 09:56:47",
+    "updateTime": "2018-07-20 10:44:35",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "中通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "科展兼容 惠普803 HP803墨盒连喷 HP1111 1112 2131 2132 803墨盒",
+      "productPrice": "62.00",
+      "transTime": "2018-06-22 17:32:51"
+    }],
+    "orderId": "174937767046467484",
+    "receiverAddr": "湖北省 武汉市 洪山区 洪山街道 洪达巷鸿达苑 ",
+    "receiverCellPhone": "86-17702718868",
+    "receiverName": "刘鸿达苑",
+    "receiverPhone": "86-17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "科展旗舰店",
+      "shopId": "2122637704",
+      "shopName": "科展旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2122637704"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 62.0,
+    "transTime": "2018-06-22 17:32:51",
+    "updateTime": "2018-07-20 10:44:35",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "足力健安全老人鞋正品女妈妈张凯丽中老年健步鞋夏季男爸爸旗舰店",
+      "productPrice": "299.00",
+      "transTime": "2018-06-22 16:57:24"
+    }, {
+      "productCnt": 1,
+      "productName": "保险服务",
+      "productPrice": "0.00",
+      "transTime": "2018-06-22 16:57:24"
+    }],
+    "orderId": "174935441154467484",
+    "receiverAddr": "湖北省 武汉市 洪山区 洪山街道 洪达巷鸿达苑 ",
+    "receiverCellPhone": "86-17702718868",
+    "receiverName": "刘鸿达苑",
+    "receiverPhone": "86-17702718868",
+    "shopInfo": {
+      "nick": "ruixinbaba",
+      "shopId": "2493177830",
+      "shopName": "老人鞋品牌商店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2493177830"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 98.0,
+    "transTime": "2018-06-22 16:57:24",
+    "updateTime": "2018-07-20 10:44:35",
+    "zipcode": "000000"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值100元电信话费直充快充 充值",
+      "productPrice": "99.80",
+      "transTime": "2018-06-16 16:51:39"
+    }],
+    "orderId": "172893038259467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 99.8,
+    "transTime": "2018-06-16 16:51:39",
+    "updateTime": "2018-07-20 10:44:35"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值100元电信话费直充快充 充值",
+      "productPrice": "99.80",
+      "transTime": "2018-06-16 16:44:01"
+    }],
+    "orderId": "172957159721467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 99.8,
+    "transTime": "2018-06-16 16:44:01",
+    "updateTime": "2018-07-20 10:44:36"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值20元电信话费直充快充 电信充值",
+      "productPrice": "19.96",
+      "transTime": "2018-06-16 16:43:53"
+    }],
+    "orderId": "172987844097467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 19.96,
+    "transTime": "2018-06-16 16:43:53",
+    "updateTime": "2018-07-20 10:44:36"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值100元电信话费直充快充 充值",
+      "productPrice": "99.80",
+      "transTime": "2018-05-31 16:29:35"
+    }],
+    "orderId": "167705310820467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 99.8,
+    "transTime": "2018-05-31 16:29:35",
+    "updateTime": "2018-07-20 10:44:36"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "抖音神器伸缩手机气囊支架指环扣配件懒人直播随手贴同款拍照道具",
+      "productPrice": "12.00",
+      "transTime": "2018-05-17 01:30:38"
+    }],
+    "orderId": "162297640177467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 新江口镇 兴业路新荥驾校 ",
+    "receiverCellPhone": "86-17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "86-17702718868",
+    "shopInfo": {
+      "nick": "人情味的人",
+      "shopId": "709662009",
+      "shopName": "创意数码超市",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=709662009"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 8.0,
+    "transTime": "2018-05-17 01:30:38",
+    "updateTime": "2018-07-20 10:44:37",
+    "zipcode": "434200"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "620069444851",
+      "productPrice": "31.90"
+    }],
+    "orderId": "160542797218467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 34.0,
+    "transTime": "2018-05-13 16:38:37",
+    "updateTime": "2018-07-20 10:44:37"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值100元电信话费直充快充 充值",
+      "productPrice": "99.80",
+      "transTime": "2018-05-09 10:51:29"
+    }],
+    "orderId": "158737692320467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 99.8,
+    "transTime": "2018-05-09 10:51:29",
+    "updateTime": "2018-07-20 10:44:37"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "快充 &mdash; 云南移动话费充值200元 自动充值 自动发货 即时到帐",
+      "productPrice": "199.96",
+      "transTime": "2018-05-04 10:27:25"
+    }],
+    "orderId": "156530424782467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "连连支付",
+      "shopId": "167212374",
+      "shopName": "连连支付",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=167212374"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 199.96,
+    "transTime": "2018-05-04 10:27:25",
+    "updateTime": "2018-07-20 10:44:38"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "韵达快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "PREFOX 护弦油 吉他琴弦 防锈除锈笔 擦弦器 二胡弦乐琴弦保养",
+      "productPrice": "18.80",
+      "transTime": "2018-04-28 01:02:11"
+    }],
+    "orderId": "153677899027467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 纸厂河镇 欣欣街红都酒店 ",
+    "receiverCellPhone": "86-17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "86-17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "柏代乐器专营店",
+      "shopId": "3299309981",
+      "shopName": "柏代乐器专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=3299309981"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 18.8,
+    "transTime": "2018-04-28 01:02:11",
+    "updateTime": "2018-07-20 10:44:38",
+    "zipcode": "434200"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "20180422130528987920299460796416",
+      "productName": "狂暴巨兽",
+      "productPrice": "49.90"
+    }],
+    "orderId": "151651397379467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 53.0,
+    "transTime": "2018-04-22 13:05:42",
+    "updateTime": "2018-07-20 10:44:38"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "湖北电信50元 手机话费充值 自动快充",
+      "productPrice": "49.92",
+      "transTime": "2018-04-20 10:30:13"
+    }],
+    "orderId": "150759401415467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "天瑞网充值专营店",
+      "shopId": "782847667",
+      "shopName": "天瑞网充值专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=782847667"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.92,
+    "transTime": "2018-04-20 10:30:13",
+    "updateTime": "2018-07-20 10:44:38"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-04-20 10:29:54"
+    }],
+    "orderId": "150819180097467484",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2018-04-20 10:29:54",
+    "updateTime": "2018-07-20 10:44:39"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "20180419111714986805899031089152",
+      "productName": "战狼2",
+      "productPrice": "14.90"
+    }],
+    "orderId": "150380842722467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 15.0,
+    "transTime": "2018-04-19 11:17:35",
+    "updateTime": "2018-07-20 10:44:39"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "20180402155715980715772382941184",
+      "productName": "花滑女王",
+      "productPrice": "7.90"
+    }],
+    "orderId": "143829879481467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 33.0,
+    "transTime": "2018-04-02 15:57:31",
+    "updateTime": "2018-07-20 10:44:39"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "085819434591",
+      "productName": "黑豹",
+      "productPrice": "55.00"
+    }],
+    "orderId": "135035160015467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 55.0,
+    "transTime": "2018-03-12 20:36:40",
+    "updateTime": "2018-07-20 10:44:39"
+  }, {
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productId": "085789727105",
+      "productName": "黑豹",
+      "productPrice": "55.00"
+    }],
+    "orderId": "135010633258467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 55.0,
+    "transTime": "2018-03-12 20:31:52",
+    "updateTime": "2018-07-20 10:44:39"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 2,
+      "productId": "20180310180442972412923702018048",
+      "productName": "黑豹",
+      "productPrice": "81.80"
+    }],
+    "orderId": "134076023389467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 90.0,
+    "transTime": "2018-03-10 18:04:54",
+    "updateTime": "2018-07-20 10:44:39"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productId": "20180302111624969411070118727680",
+      "productName": "唐人街探案2",
+      "productPrice": "41.90"
+    }],
+    "orderId": "129879130830467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 45.0,
+    "transTime": "2018-03-02 11:16:41",
+    "updateTime": "2018-07-20 10:44:39"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值100元电信话费直充快充 充值",
+      "productPrice": "99.80",
+      "transTime": "2018-04-02 11:03:44"
+    }],
+    "orderId": "143680695517467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 99.8,
+    "transTime": "2018-04-02 11:03:44",
+    "updateTime": "2018-07-20 10:44:40",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "湖北电信50元中国电信充值天翼手机话费自动充值仅支持CDMA",
+      "productPrice": "49.98",
+      "transTime": "2018-03-22 17:34:54"
+    }],
+    "orderId": "139185966129467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "维思盈科话费专营店",
+      "shopId": "799053301",
+      "shopName": "维思盈科话费专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=799053301"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.98,
+    "transTime": "2018-03-22 17:34:54",
+    "updateTime": "2018-07-20 10:44:40",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "2018新款韩版个性短袖衬衫男潮流五分袖男衬衣翻领小清新学生寸衫",
+      "productPrice": "138.00",
+      "transTime": "2018-03-21 12:08:00"
+    }, {
+      "productCnt": 1,
+      "productName": "2018夏季新款男士短袖t恤韩版潮流半袖五分袖体恤港风圆领半截袖",
+      "productPrice": "89.00",
+      "transTime": "2018-03-21 12:08:00"
+    }, {
+      "productCnt": 1,
+      "productName": "2018新款港风男士短袖夏装韩版潮牌半袖学生圆领五分袖上衣服T恤",
+      "productPrice": "68.00",
+      "transTime": "2018-03-21 12:08:00"
+    }, {
+      "productCnt": 1,
+      "productName": "男士夹克连帽中长款牛仔外套2018新款春季韩版宽松休闲潮流牛仔衣",
+      "productPrice": "269.00",
+      "transTime": "2018-03-21 12:08:00"
+    }],
+    "orderId": "138662730535467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "tiaota旗舰店",
+      "shopId": "2146928739",
+      "shopName": "tiaota旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2146928739"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 282.0,
+    "transTime": "2018-03-21 12:08:00",
+    "updateTime": "2018-07-20 10:44:40",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "男士夹克连帽中长款牛仔外套2018新款春季韩版宽松休闲潮流牛仔衣",
+      "productPrice": "269.00",
+      "transTime": "2018-03-20 17:56:23"
+    }, {
+      "productCnt": 1,
+      "productName": "2018新款港风男士短袖夏装韩版潮牌半袖学生圆领五分袖上衣服T恤",
+      "productPrice": "68.00",
+      "transTime": "2018-03-20 17:56:23"
+    }, {
+      "productCnt": 1,
+      "productName": "春季卫衣男2018新款韩版潮流帅气连帽套头学生男bf宽松印花外套男",
+      "productPrice": "169.00",
+      "transTime": "2018-03-20 17:56:23"
+    }, {
+      "productCnt": 1,
+      "productName": "2018夏季新款男士短袖t恤韩版潮流半袖五分袖体恤港风圆领半截袖",
+      "productPrice": "89.00",
+      "transTime": "2018-03-20 17:56:23"
+    }],
+    "orderId": "138387491771467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "tiaota旗舰店",
+      "shopId": "2146928739",
+      "shopName": "tiaota旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2146928739"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 302.0,
+    "transTime": "2018-03-20 17:56:23",
+    "updateTime": "2018-07-20 10:44:41",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-03-09 07:22:10"
+    }],
+    "orderId": "133383160878467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2018-03-09 07:22:10",
+    "updateTime": "2018-07-20 10:44:41",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "申通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "畅享6s手机壳华为6保护套荣耀畅想5s翻盖5真皮套男女全包硅胶防摔",
+      "productPrice": "68.00",
+      "transTime": "2018-03-08 18:59:05"
+    }],
+    "orderId": "133121951168467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街大地娱乐城（好上好对面） ",
+    "receiverCellPhone": "15027178900",
+    "receiverName": "刘洪",
+    "receiverPhone": "15027178900",
+    "shopInfo": {
+      "nick": "小珑铺子",
+      "shopId": "931029684",
+      "shopName": "闪米数码",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=931029684"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 19.8,
+    "transTime": "2018-03-08 18:59:05",
+    "updateTime": "2018-07-20 10:44:41",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "顺丰速运",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】CONVERSE匡威官方 星箭系列平沿帽 10005505",
+      "productPrice": "169.00",
+      "transTime": "2018-03-07 01:26:16"
+    }, {
+      "productCnt": 1,
+      "productName": "【女王价】CONVERSE匡威官方 Jack Purcell LP 透气网眼开口笑 156373C",
+      "productPrice": "539.00",
+      "transTime": "2018-03-07 01:26:16"
+    }],
+    "orderId": "132042579717467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "converse官方旗舰店",
+      "shopId": "1046707508",
+      "shopName": "CONVERSE官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=1046707508"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 324.0,
+    "transTime": "2018-03-07 01:26:16",
+    "updateTime": "2018-07-20 10:44:41",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "韵达快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "帽子男士夏天嘻哈帽青年棒球帽韩版潮防晒遮阳帽百搭女鸭舌太阳帽",
+      "productPrice": "119.00",
+      "transTime": "2018-03-07 01:19:50"
+    }],
+    "orderId": "132078557302467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "百顺鱼旗舰店",
+      "shopId": "2408246530",
+      "shopName": "百顺鱼旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2408246530"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 19.8,
+    "transTime": "2018-03-07 01:19:50",
+    "updateTime": "2018-07-20 10:44:41",
+    "zipcode": "000000"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 2,
+      "productId": "20180227184803968437568398036992",
+      "productName": "红海行动",
+      "productPrice": "61.80"
+    }],
+    "orderId": "128651694957467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 74.0,
+    "transTime": "2018-02-27 18:48:46",
+    "updateTime": "2018-07-20 10:44:41"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 2,
+      "productId": "576087321240",
+      "productName": "太空救援",
+      "productPrice": "23.60"
+    }],
+    "orderId": "113824432814467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 50.0,
+    "transTime": "2018-01-12 20:42:02",
+    "updateTime": "2018-07-20 10:44:41"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 2,
+      "productId": "1091242658",
+      "productName": "全球风暴",
+      "productPrice": "80.00"
+    }],
+    "orderId": "84186214156467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 80.0,
+    "transTime": "2017-11-01 20:49:57",
+    "updateTime": "2018-07-20 10:44:42"
+  }, {
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 2,
+      "productId": "754595102001",
+      "productName": "追龙",
+      "productPrice": "43.60"
+    }],
+    "orderId": "71390072077467484",
+    "shopInfo": {
+      "nick": "淘票票-淘出好时光",
+      "shopId": "2935370446"
+    },
+    "statusText": "交易成功(已出票)",
+    "totalPrice": 50.0,
+    "transTime": "2017-10-09 18:46:06",
+    "updateTime": "2018-07-20 10:44:42"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】意树秋季休闲九分裤运动刺绣束脚裤宽松纯棉时尚哈伦小脚卫裤男裤",
+      "productPrice": "399.00",
+      "transTime": "2018-03-07 01:10:57"
+    }],
+    "orderId": "132073433147467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "意树旗舰店",
+      "shopId": "1750099105",
+      "shopName": "意树旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=1750099105"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 161.32,
+    "transTime": "2018-03-07 01:10:57",
+    "updateTime": "2018-07-20 10:44:42",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "中通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】宜家依耳塞超强隔音静音降噪防噪音睡眠学生防呼噜防吵神器专业",
+      "productPrice": "74.75",
+      "transTime": "2018-03-07 01:10:57"
+    }],
+    "orderId": "132073433148467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "宜家依旗舰店",
+      "shopId": "2167057107",
+      "shopName": "宜家依旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2167057107"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 24.15,
+    "transTime": "2018-03-07 01:10:57",
+    "updateTime": "2018-07-20 10:44:42",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 2,
+      "productName": "【女王价】AMH男装韩版2017夏季新款青年学生时尚印花纯棉短袖T恤PA7709澄",
+      "productPrice": "79.00",
+      "transTime": "2018-03-07 01:10:57"
+    }],
+    "orderId": "132073433149467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "amh官方旗舰店",
+      "shopId": "849727411",
+      "shopName": "AMH官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=849727411"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 88.33,
+    "transTime": "2018-03-07 01:10:57",
+    "updateTime": "2018-07-20 10:44:43",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 3,
+      "productName": "【女王价】李宁低跟袜男士舒适高弹短筒三双装运动袜AWSM097",
+      "productPrice": "45.00",
+      "transTime": "2018-03-07 01:00:05"
+    }, {
+      "productCnt": 1,
+      "productName": "【女王价】李宁卫衣男士2018新款溯系列GAI同款套头衫长袖卫衣夏季运动服",
+      "productPrice": "299.00",
+      "transTime": "2018-03-07 01:00:05"
+    }],
+    "orderId": "132075756941467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "李宁官方网络旗舰店",
+      "shopId": "92688455",
+      "shopName": "李宁官方网店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=92688455"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 310.0,
+    "transTime": "2018-03-07 01:00:05",
+    "updateTime": "2018-07-20 10:44:43",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】李宁卫衣男士2018新款溯系列GAI同款套头衫长袖卫衣夏季运动服",
+      "productPrice": "299.00",
+      "transTime": "2018-03-07 00:58:29"
+    }, {
+      "productCnt": 4,
+      "productName": "【女王价】李宁儿童袜子2018新款女小童3-6岁短筒三双装运动袜YWTN028",
+      "productPrice": "49.00",
+      "transTime": "2018-03-07 00:58:29"
+    }],
+    "orderId": "132072649220467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "李宁官方网络旗舰店",
+      "shopId": "92688455",
+      "shopName": "李宁官方网店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=92688455"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 334.0,
+    "transTime": "2018-03-07 00:58:29",
+    "updateTime": "2018-07-20 10:44:43",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】【纽约时装周同款】李宁篮球鞋中国风溯系列轩辕男鞋云减震运动鞋",
+      "productPrice": "639.00",
+      "transTime": "2018-03-07 00:55:30"
+    }],
+    "orderId": "132021467557467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "李宁官方网络旗舰店",
+      "shopId": "92688455",
+      "shopName": "李宁官方网店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=92688455"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 418.0,
+    "transTime": "2018-03-07 00:55:30",
+    "updateTime": "2018-07-20 10:44:43",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】李宁篮球鞋男鞋驭帅11代李宁云减震耐磨防滑高帮春秋运动鞋",
+      "productPrice": "699.00",
+      "transTime": "2018-03-07 00:20:23"
+    }],
+    "orderId": "132047422796467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "李宁官方网络旗舰店",
+      "shopId": "92688455",
+      "shopName": "李宁官方网店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=92688455"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 418.0,
+    "transTime": "2018-03-07 00:20:23",
+    "updateTime": "2018-07-20 10:44:43",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】李宁篮球鞋男鞋驭帅11代李宁云减震耐磨防滑高帮春秋运动鞋",
+      "productPrice": "699.00",
+      "transTime": "2018-03-07 00:19:51"
+    }],
+    "orderId": "132040924796467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "李宁官方网络旗舰店",
+      "shopId": "92688455",
+      "shopName": "李宁官方网店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=92688455"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 418.0,
+    "transTime": "2018-03-07 00:19:51",
+    "updateTime": "2018-07-20 10:44:43",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】意树秋季休闲九分裤运动刺绣束脚裤宽松纯棉时尚哈伦小脚卫裤男裤",
+      "productPrice": "399.00",
+      "transTime": "2018-03-07 00:04:55"
+    }],
+    "orderId": "131969891793467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "意树旗舰店",
+      "shopId": "1750099105",
+      "shopName": "意树旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=1750099105"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 180.14,
+    "transTime": "2018-03-07 00:04:55",
+    "updateTime": "2018-07-20 10:44:43",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "韵达快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】袜子男士船袜男低帮纯棉短袜硅胶防滑运动防臭浅口隐形袜厂家批发",
+      "productPrice": "45.00",
+      "transTime": "2018-03-07 00:04:55"
+    }],
+    "orderId": "131969891794467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "素淘旗舰店",
+      "shopId": "2950399199",
+      "shopName": "素淘旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2950399199"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 17.65,
+    "transTime": "2018-03-07 00:04:55",
+    "updateTime": "2018-07-20 10:44:44",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】李宁卫裤男士训练系列长裤收口针织春季运动裤AKLK033",
+      "productPrice": "199.00",
+      "transTime": "2018-03-07 00:04:55"
+    }],
+    "orderId": "131969891795467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "李宁官方网络旗舰店",
+      "shopId": "92688455",
+      "shopName": "李宁官方网店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=92688455"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 88.71,
+    "transTime": "2018-03-07 00:04:55",
+    "updateTime": "2018-07-20 10:44:44",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】袜子男士船袜男低帮纯棉短袜硅胶防滑运动防臭浅口隐形袜厂家批发",
+      "productPrice": "45.00",
+      "transTime": "2018-03-07 00:03:33"
+    }],
+    "orderId": "131991253912467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "素淘旗舰店",
+      "shopId": "2950399199",
+      "shopName": "素淘旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2950399199"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 17.65,
+    "transTime": "2018-03-07 00:03:33",
+    "updateTime": "2018-07-20 10:44:44",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】意树秋季休闲九分裤运动刺绣束脚裤宽松纯棉时尚哈伦小脚卫裤男裤",
+      "productPrice": "399.00",
+      "transTime": "2018-03-07 00:03:33"
+    }],
+    "orderId": "131991253913467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "意树旗舰店",
+      "shopId": "1750099105",
+      "shopName": "意树旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=1750099105"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 180.14,
+    "transTime": "2018-03-07 00:03:33",
+    "updateTime": "2018-07-20 10:44:44",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "【女王价】李宁卫裤男士训练系列长裤收口针织春季运动裤AKLK033",
+      "productPrice": "199.00",
+      "transTime": "2018-03-07 00:03:33"
+    }],
+    "orderId": "131991253914467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "李宁官方网络旗舰店",
+      "shopId": "92688455",
+      "shopName": "李宁官方网店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=92688455"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 88.71,
+    "transTime": "2018-03-07 00:03:33",
+    "updateTime": "2018-07-20 10:44:44",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "韵达快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "PU耐磨防滑减震运动鞋垫男 吸汗防臭软鞋垫大码30-50码篮球鞋垫48",
+      "productPrice": "27.00",
+      "transTime": "2018-03-05 21:56:20"
+    }],
+    "orderId": "131454467199467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://img.alicdn.com/gtd.alicdn.com(trade)/tps/i2/TB1Yta.HVXXXXX3XFXXAz6UFXXX-16-16.png",
+      "nick": "杭州帆人科技",
+      "shopId": "2823030735",
+      "shopName": "帆人运动减震鞋垫",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2823030735"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 21.79,
+    "transTime": "2018-03-05 21:56:20",
+    "updateTime": "2018-07-20 10:44:44",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-03-04 13:19:48"
+    }],
+    "orderId": "130829786017467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2018-03-04 13:19:48",
+    "updateTime": "2018-07-20 10:44:45",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "韵达快递",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "韩国潮牌flipper男女鸭舌帽子小长带圆环棒球帽涂层漆皮质弯檐帽",
+      "productPrice": "189.00",
+      "transTime": "2018-03-02 20:12:11"
+    }],
+    "orderId": "130069587883467484",
+    "receiverAddr": "湖南省 长沙市 长沙县 星沙方略城市广场十栋2221室 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘长沙",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "nick": "lsecgw",
+      "shopId": "230188438",
+      "shopName": "小昕韩代",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=230188438"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 133.0,
+    "transTime": "2018-03-02 20:12:11",
+    "updateTime": "2018-07-20 10:44:45",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-02-17 10:54:42"
+    }],
+    "orderId": "125550273638467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2018-02-17 10:54:42",
+    "updateTime": "2018-07-20 10:44:45",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-02-17 10:53:53"
+    }],
+    "orderId": "125564132548467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 49.9,
+    "transTime": "2018-02-17 10:53:53",
+    "updateTime": "2018-07-20 10:44:45",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-02-10 09:29:56"
+    }],
+    "orderId": "124581332044467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2018-02-10 09:29:56",
+    "updateTime": "2018-07-20 10:44:46",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-02-01 20:19:20"
+    }],
+    "orderId": "121911563796467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2018-02-01 20:19:20",
+    "updateTime": "2018-07-20 10:44:46",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "顺丰速运",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "ins超火的鞋子冬季百搭街拍款运动鞋女 情侣原宿gd复古老爹鞋男潮",
+      "productPrice": "458.00",
+      "transTime": "2018-01-30 19:09:49"
+    }],
+    "orderId": "121052745172467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "才子优长专卖店",
+      "shopId": "2259636393",
+      "shopName": "才子优长专卖店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2259636393"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 271.0,
+    "transTime": "2018-01-30 19:09:49",
+    "updateTime": "2018-07-20 10:44:46",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "友缘无水暖手宝usb暖宝宝充电防爆暖宝可爱毛绒轻柔便捷热暖水袋",
+      "productPrice": "298.00",
+      "transTime": "2018-01-27 13:44:47"
+    }],
+    "orderId": "119714121361467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "友缘居家日用旗舰店",
+      "shopId": "2139496540",
+      "shopName": "友缘居家日用旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2139496540"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 89.0,
+    "transTime": "2018-01-27 13:44:47",
+    "updateTime": "2018-07-20 10:44:46",
+    "zipcode": "434200"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-01-21 09:44:01"
+    }],
+    "orderId": "116966116083467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2018-01-21 09:44:01",
+    "updateTime": "2018-07-20 10:44:46",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "新鲜水果酒醉枣红枣醉枣酒枣杏花村汾酒大红枣狗头枣黄河滩枣5斤",
+      "productPrice": "238.00",
+      "transTime": "2018-01-17 22:56:58"
+    }],
+    "orderId": "115751448030467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "nick": "樱桃姐姐678",
+      "shopId": "446039197",
+      "shopName": "爱心美食城",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=446039197"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 68.8,
+    "transTime": "2018-01-17 22:56:58",
+    "updateTime": "2018-07-20 10:44:46",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "顺丰速运",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "摩杰乐器 DOVE DD220S C 210 和平鸽 初学鸽子单板民谣吉他 电箱",
+      "productPrice": "1680.00",
+      "transTime": "2018-01-16 15:43:14"
+    }],
+    "orderId": "115216986423467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "摩杰乐器专营店",
+      "shopId": "2063363250",
+      "shopName": "摩杰乐器专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2063363250"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 1520.0,
+    "transTime": "2018-01-16 15:43:14",
+    "updateTime": "2018-07-20 10:44:47",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "中通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "3双装 秋冬针织粗线堆堆袜日系袜子复古拼色中筒袜子韩国百搭靴袜",
+      "productPrice": "32.00",
+      "transTime": "2018-01-14 21:24:22"
+    }],
+    "orderId": "114557808022467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://img.alicdn.com/gtd.alicdn.com(trade)/tps/i2/TB1Yta.HVXXXXX3XFXXAz6UFXXX-16-16.png",
+      "nick": "买布的小男孩",
+      "shopId": "649098422",
+      "shopName": "田螺姑娘袜子铺",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=649098422"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 18.8,
+    "transTime": "2018-01-14 21:24:22",
+    "updateTime": "2018-07-20 10:44:47",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "冬季加厚加绒卫衣男圆领套头衫长毛加厚棒球服 宽松大码男士外套",
+      "productPrice": "129.00",
+      "transTime": "2018-01-14 21:07:51"
+    }],
+    "orderId": "114547112971467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "nick": "离人词墨冷",
+      "shopId": "2841908846",
+      "shopName": "专注十年 原创日系复古简约男装一站式购物基地",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2841908846"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 56.0,
+    "transTime": "2018-01-14 21:07:51",
+    "updateTime": "2018-07-20 10:44:47",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "申通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "情侣男女同款大鹅oversize迷彩宽松加厚羽绒服外套宋茜明星同款",
+      "productPrice": "399.00",
+      "transTime": "2018-01-13 09:24:34"
+    }],
+    "orderId": "113943628958467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://img.alicdn.com/gtd.alicdn.com(trade)/tps/i2/TB1Yta.HVXXXXX3XFXXAz6UFXXX-16-16.png",
+      "nick": "大脸猫独立设计师品牌",
+      "shopId": "2579602059",
+      "shopName": "大脸猫家 微胖也有范 勇敢做自己",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2579602059"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 399.0,
+    "transTime": "2018-01-13 09:24:34",
+    "updateTime": "2018-07-20 10:44:47",
+    "zipcode": "434200"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "韵达快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "津范 ow风黑白织带宽松长裤 侧面拼接休闲运动卫裤男女飘带束脚裤",
+      "productPrice": "199.00",
+      "transTime": "2018-01-13 09:24:34"
+    }],
+    "orderId": "113943628959467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街红都酒店 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "nick": "姗lisa",
+      "shopId": "616522666",
+      "shopName": "津门范儿",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=616522666"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 149.0,
+    "transTime": "2018-01-13 09:24:34",
+    "updateTime": "2018-07-20 10:44:47",
+    "zipcode": "434200"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2018-01-07 12:09:31"
+    }],
+    "orderId": "111634863392467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2018-01-07 12:09:31",
+    "updateTime": "2018-07-20 10:44:48",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "自动充值 重庆联通话费50元手机充值50元快充50元 及时到账",
+      "productPrice": "49.84",
+      "transTime": "2018-01-04 14:00:10"
+    }],
+    "orderId": "110559213546467484",
+    "receiverCellPhone": "13220346095",
+    "receiverName": "刘少怪",
+    "receiverPhone": "13220346095",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "v8话费充值专营店",
+      "shopId": "1669256514",
+      "shopName": "v8话费充值专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=1669256514"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.84,
+    "transTime": "2018-01-04 14:00:10",
+    "updateTime": "2018-07-20 10:44:48",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2017-12-19 13:11:41"
+    }],
+    "orderId": "104295335918467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 49.9,
+    "transTime": "2017-12-19 13:11:41",
+    "updateTime": "2018-07-20 10:44:48",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值10元电信话费直充快充 电信充值",
+      "productPrice": "9.98",
+      "transTime": "2017-12-18 11:43:43"
+    }],
+    "orderId": "103789428126467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 9.98,
+    "transTime": "2017-12-18 11:43:43",
+    "updateTime": "2018-07-20 10:44:48",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "10.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "联想zuk edge触摸屏 z2151 换原装盖板外屏幕玻璃触摸屏维修",
+      "productPrice": "16.00",
+      "transTime": "2017-12-15 14:21:23"
+    }],
+    "orderId": "102420537559467484",
+    "receiverAddr": "浙江省 杭州市 余杭区 良运路瑞麒时代三栋712 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "nick": "东启内配行",
+      "shopId": "2646285743",
+      "shopName": "东启通讯科技",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2646285743"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 26.0,
+    "transTime": "2017-12-15 14:21:23",
+    "updateTime": "2018-07-20 10:44:49",
+    "zipcode": "311100"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "联想zuk Z2更换触摸外屏玻璃 z2151 z2pro edge Z1显示屏总成维修",
+      "productPrice": "398.00",
+      "transTime": "2017-12-08 15:16:25"
+    }],
+    "orderId": "99670265066467484",
+    "receiverAddr": "湖北省 武汉市 江汉区 北湖正街中百仓储左边巷子进去人智里43栋411号房 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "周佳伟",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://img.alicdn.com/gtd.alicdn.com(trade)/tps/i2/TB1Yta.HVXXXXX3XFXXAz6UFXXX-16-16.png",
+      "nick": "江滦业科技",
+      "shopId": "3447687758",
+      "shopName": "江滦业科技有限公司",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=3447687758"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 398.0,
+    "transTime": "2017-12-08 15:16:25",
+    "updateTime": "2018-07-20 10:44:49",
+    "zipcode": "430015"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2017-12-03 13:55:47"
+    }],
+    "orderId": "98671535242467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2017-12-03 13:55:47",
+    "updateTime": "2018-07-20 10:44:49",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "电子凭证",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "联想zuk Z2更换触摸外屏玻璃 z2151 z2pro edge Z1显示屏总成维修",
+      "productPrice": "168.00",
+      "transTime": "2017-12-02 18:49:53"
+    }],
+    "orderId": "98529463047467484",
+    "shopInfo": {
+      "imgUrl": "https://img.alicdn.com/gtd.alicdn.com(trade)/tps/i2/TB1Yta.HVXXXXX3XFXXAz6UFXXX-16-16.png",
+      "nick": "江滦业科技",
+      "shopId": "3447687758",
+      "shopName": "江滦业科技有限公司",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=3447687758"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 168.0,
+    "transTime": "2017-12-02 18:49:53",
+    "updateTime": "2018-07-20 10:44:49"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "湖北移动手机话费充值20元 快充直充 24小时自动充值 快速到帐",
+      "productPrice": "20.00",
+      "transTime": "2017-11-23 08:24:55"
+    }],
+    "orderId": "96648169508467484",
+    "receiverCellPhone": "15802786262",
+    "receiverName": "刘少怪",
+    "receiverPhone": "15802786262",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "硕软旗舰店",
+      "shopId": "3322680176",
+      "shopName": "硕软旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=3322680176"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 20.0,
+    "transTime": "2017-11-23 08:24:55",
+    "updateTime": "2018-07-20 10:44:49",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2017-11-12 08:16:55"
+    }],
+    "orderId": "94227154117467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2017-11-12 08:16:55",
+    "updateTime": "2018-07-20 10:44:50",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "联想zuk Z2更换触摸外屏玻璃 z2151 z2pro edge Z1显示屏总成维修",
+      "productPrice": "168.00",
+      "transTime": "2017-11-05 15:15:09"
+    }],
+    "orderId": "86158140561467484",
+    "receiverAddr": "浙江省 杭州市 余杭区 良运路瑞麒时代三栋712 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://img.alicdn.com/gtd.alicdn.com(trade)/tps/i2/TB1Yta.HVXXXXX3XFXXAz6UFXXX-16-16.png",
+      "nick": "江滦业科技",
+      "shopId": "3447687758",
+      "shopName": "江滦业科技有限公司",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=3447687758"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 168.0,
+    "transTime": "2017-11-05 15:15:09",
+    "updateTime": "2018-07-20 10:44:50",
+    "zipcode": "311100"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "湖北电信50元话费快充 手机充值话费 电信全自动充值 即时到帐",
+      "productPrice": "49.98",
+      "transTime": "2017-11-01 12:34:02"
+    }],
+    "orderId": "83917610021467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "来来网网充值专营店",
+      "shopId": "761724391",
+      "shopName": "来来网网充值专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=761724391"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.98,
+    "transTime": "2017-11-01 12:34:02",
+    "updateTime": "2018-07-20 10:44:50",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "韵达快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "被套单件纯棉1.5米1.8m床100%全棉学生单人床双人200x230秋冬被罩",
+      "productPrice": "100.00",
+      "transTime": "2017-10-27 09:58:36"
+    }],
+    "orderId": "81178398875467484",
+    "receiverAddr": "湖北省 武汉市 江汉区 北湖正街中百仓储左边巷子进去人智里43栋411号房 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "周佳伟",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "nick": "欧梵家纺生活馆",
+      "shopId": "2986075057",
+      "shopName": "欧梵家纺生活馆",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2986075057"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 50.0,
+    "transTime": "2017-10-27 09:58:36",
+    "updateTime": "2018-07-20 10:44:50",
+    "zipcode": "430015"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "湖北电信50元充值 快充 电信卡充值（不支持固话、小灵通）",
+      "productPrice": "49.99",
+      "transTime": "2017-10-24 10:47:02"
+    }],
+    "orderId": "79609335253467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "君宝话费充值专营店",
+      "shopId": "814074396",
+      "shopName": "君宝话费充值专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=814074396"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.99,
+    "transTime": "2017-10-24 10:47:02",
+    "updateTime": "2018-07-20 10:44:50",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "湖北电信手机话费充值20元 快充直充 24小时自动充值 快速到帐",
+      "productPrice": "20.00",
+      "transTime": "2017-10-16 14:18:59"
+    }],
+    "orderId": "75275830188467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "硕软旗舰店",
+      "shopId": "3322680176",
+      "shopName": "硕软旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=3322680176"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 20.0,
+    "transTime": "2017-10-16 14:18:59",
+    "updateTime": "2018-07-20 10:44:50",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "浙江移动 手机 话费充值 20元 快充直充 24小时自动充值快速到账",
+      "productPrice": "19.96",
+      "transTime": "2017-10-16 13:59:25"
+    }],
+    "orderId": "75233604781467484",
+    "receiverCellPhone": "18858270844",
+    "receiverName": "刘少怪",
+    "receiverPhone": "18858270844",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "浙江移动官方旗舰店",
+      "shopId": "908875136",
+      "shopName": "浙江移动官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=908875136"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 19.96,
+    "transTime": "2017-10-16 13:59:25",
+    "updateTime": "2018-07-20 10:44:51",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "中通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "聚新货【三只松鼠_手剥山核桃235g】坚果炒货临安小核桃奶油味",
+      "productPrice": "68.00",
+      "transTime": "2017-10-13 16:51:21"
+    }],
+    "orderId": "73622655483467484",
+    "receiverAddr": "湖北省 荆州市 松滋市 欣欣街大地娱乐城（好上好对面） ",
+    "receiverCellPhone": "15027178900",
+    "receiverName": "刘洪",
+    "receiverPhone": "15027178900",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "三只松鼠旗舰店",
+      "shopId": "880734502",
+      "shopName": "三只松鼠旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=880734502"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 32.9,
+    "transTime": "2017-10-13 16:51:21",
+    "updateTime": "2018-07-20 10:44:51",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "浙江移动 手机 话费充值 10元 快充直充 24小时自动充值快速到账",
+      "productPrice": "9.98",
+      "transTime": "2017-10-12 12:06:54"
+    }],
+    "orderId": "72912180171467484",
+    "receiverCellPhone": "18858270844",
+    "receiverName": "刘少怪",
+    "receiverPhone": "18858270844",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "浙江移动官方旗舰店",
+      "shopId": "908875136",
+      "shopName": "浙江移动官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=908875136"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 9.98,
+    "transTime": "2017-10-12 12:06:54",
+    "updateTime": "2018-07-20 10:44:52",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "浙江移动 手机 话费充值 20元 快充直充 24小时自动充值快速到账",
+      "productPrice": "19.96",
+      "transTime": "2017-10-12 12:01:49"
+    }],
+    "orderId": "72913441996467484",
+    "receiverCellPhone": "18858270844",
+    "receiverName": "刘少怪",
+    "receiverPhone": "18858270844",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "浙江移动官方旗舰店",
+      "shopId": "908875136",
+      "shopName": "浙江移动官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=908875136"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 19.96,
+    "transTime": "2017-10-12 12:01:49",
+    "updateTime": "2018-07-20 10:44:52",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值20元电信话费直充快充 电信充值",
+      "productPrice": "19.96",
+      "transTime": "2017-10-12 12:01:30"
+    }],
+    "orderId": "72917699220467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 19.96,
+    "transTime": "2017-10-12 12:01:30",
+    "updateTime": "2018-07-20 10:44:52",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "浙江移动20元手机话费快充 自动充值",
+      "productPrice": "20.00",
+      "transTime": "2017-10-12 11:58:33"
+    }],
+    "orderId": "72915543225467484",
+    "receiverCellPhone": "18858270844",
+    "receiverName": "刘少怪",
+    "receiverPhone": "18858270844",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "手拉手话费专营店",
+      "shopId": "531389273",
+      "shopName": "手拉手话费专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=531389273"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 20.0,
+    "transTime": "2017-10-12 11:58:33",
+    "updateTime": "2018-07-20 10:44:52",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "圆通速递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "品胜安卓通用三合一数据线vivo小米充电线type-c一拖三苹果快充线",
+      "productPrice": "29.00",
+      "transTime": "2017-10-09 14:43:50"
+    }],
+    "orderId": "71259595541467484",
+    "receiverAddr": "湖北省 武汉市 洪山区 武汉理工大学南湖新校区 南四宿舍 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘博明",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "品胜弘方专卖店",
+      "shopId": "3339807909",
+      "shopName": "品胜弘方专卖店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=3339807909"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 19.0,
+    "transTime": "2017-10-09 14:43:50",
+    "updateTime": "2018-07-20 10:44:52",
+    "zipcode": "430070"
+  }, {
+    "deliveryType": "—",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值20元电信话费直充快充 电信充值",
+      "productPrice": "19.96",
+      "transTime": "2017-09-30 10:40:01"
+    }],
+    "orderId": "66829322449467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "交易关闭",
+    "totalPrice": 19.96,
+    "transTime": "2017-09-30 10:40:01",
+    "updateTime": "2018-07-20 10:44:53",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值30元电信话费直充快充 电信充值",
+      "productPrice": "29.94",
+      "transTime": "2017-09-28 20:33:30"
+    }],
+    "orderId": "66150153573467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 29.94,
+    "transTime": "2017-09-28 20:33:30",
+    "updateTime": "2018-07-20 10:44:53",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "浙江移动20元充值 快充 即时到帐 自动充值",
+      "productPrice": "20.00",
+      "transTime": "2017-09-24 11:02:35"
+    }],
+    "orderId": "64126785920467484",
+    "receiverCellPhone": "18858270844",
+    "receiverName": "刘少怪",
+    "receiverPhone": "18858270844",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "君宝话费充值专营店",
+      "shopId": "814074396",
+      "shopName": "君宝话费充值专营店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=814074396"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 20.0,
+    "transTime": "2017-09-24 11:02:35",
+    "updateTime": "2018-07-20 10:44:53",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2017-09-24 08:46:00"
+    }],
+    "orderId": "64104303666467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2017-09-24 08:46:00",
+    "updateTime": "2018-07-20 10:44:54",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "百世快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "黑色弹力布 手机背面卡套 校卡公交卡信用卡身份证银行卡套 包邮",
+      "productPrice": "15.00",
+      "transTime": "2017-09-20 11:21:17"
+    }, {
+      "productCnt": 1,
+      "productName": "出口品质 可直接刷公交卡手机壳铁氧体防磁贴片抗干扰屏蔽纸 包邮",
+      "productPrice": "15.00",
+      "transTime": "2017-09-20 11:21:17"
+    }, {
+      "productCnt": 1,
+      "productName": "黑色弹力布 手机背面卡套 校卡公交卡信用卡身份证银行卡套 包邮",
+      "productPrice": "15.00",
+      "transTime": "2017-09-20 11:21:17"
+    }, {
+      "productCnt": 1,
+      "productName": "黑色硅胶口袋 肤状纹理手机插卡套背贴 校卡公交卡门禁卡包 包邮",
+      "productPrice": "10.00",
+      "transTime": "2017-09-20 11:21:17"
+    }, {
+      "productCnt": 1,
+      "productName": "欧美简约风 黑色硅胶指套 苹果手机背面校卡信用卡公交卡贴 包邮",
+      "productPrice": "10.00",
+      "transTime": "2017-09-20 11:21:17"
+    }],
+    "orderId": "62443959801467484",
+    "receiverAddr": "浙江省 杭州市 余杭区 良运路瑞麒时代三栋712 ",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://img.alicdn.com/gtd.alicdn.com(trade)/tps/i2/TB1Yta.HVXXXXX3XFXXAz6UFXXX-16-16.png",
+      "nick": "壮壮卡套铺子",
+      "shopId": "2668857140",
+      "shopName": "壮壮卡套铺子",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2668857140"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 35.4,
+    "transTime": "2017-09-20 11:21:17",
+    "updateTime": "2018-07-20 10:44:54",
+    "zipcode": "311100"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值20元电信话费直充快充 电信充值",
+      "productPrice": "19.96",
+      "transTime": "2017-09-13 19:08:11"
+    }],
+    "orderId": "59620130034467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 19.96,
+    "transTime": "2017-09-13 19:08:11",
+    "updateTime": "2018-07-20 10:44:54",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值20元电信话费直充快充 电信充值",
+      "productPrice": "19.96",
+      "transTime": "2017-09-13 13:53:20"
+    }],
+    "orderId": "59486009569467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 19.96,
+    "transTime": "2017-09-13 13:53:20",
+    "updateTime": "2018-07-20 10:44:54",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "浙江移动手机话费充值20元 快充直充24小时中国移动官方旗舰店",
+      "productPrice": "19.96",
+      "transTime": "2017-09-09 19:32:04"
+    }],
+    "orderId": "57963256744467484",
+    "receiverCellPhone": "18858270844",
+    "receiverName": "刘少怪",
+    "receiverPhone": "18858270844",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国移动官方旗舰店",
+      "shopId": "1776456424",
+      "shopName": "中国移动官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=1776456424"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 19.96,
+    "transTime": "2017-09-09 19:32:04",
+    "updateTime": "2018-07-20 10:44:54",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "湖北电信手机话费充值50元 快充直充 24小时自动充值 快速到帐",
+      "productPrice": "49.99",
+      "transTime": "2017-08-26 17:24:46"
+    }],
+    "orderId": "51644079941467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "硕软旗舰店",
+      "shopId": "3322680176",
+      "shopName": "硕软旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=3322680176"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.99,
+    "transTime": "2017-08-26 17:24:46",
+    "updateTime": "2018-07-20 10:44:55",
+    "zipcode": "000000"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2017-08-13 12:32:37"
+    }],
+    "orderId": "45709059451467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2017-08-13 12:32:37",
+    "updateTime": "2018-07-20 10:44:55",
+    "zipcode": "000000"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "中通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 1,
+      "productName": "宜家依隔音耳塞防噪音睡眠男女防呼噜专业工作静音学习用超强降噪",
+      "productPrice": "74.75",
+      "transTime": "2017-08-07 13:27:29"
+    }],
+    "orderId": "43469560839467484",
+    "receiverAddr": "浙江省 杭州市 拱墅区 祥园路盘石互联网广告大厦 ",
+    "receiverCellPhone": "18858270844",
+    "receiverName": "刘少怪",
+    "receiverPhone": "18858270844",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "宜家依旗舰店",
+      "shopId": "2167057107",
+      "shopName": "宜家依旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=2167057107"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 28.8,
+    "transTime": "2017-08-07 13:27:29",
+    "updateTime": "2018-07-20 10:44:56",
+    "zipcode": "310011"
+  }, {
+    "deliveryFee": "0.00",
+    "deliveryType": "申通快递",
+    "isSuccess": true,
+    "items": [{
+      "productCnt": 2,
+      "productName": "台湾顺丰直发 车力屋FRANDO 7NB直推前后刹车总泵液压离合上泵",
+      "productPrice": "1599.00",
+      "transTime": "2017-08-06 17:35:58"
+    }, {
+      "productCnt": 1,
+      "productName": "小牛电动车N1/N1S 控制器 无损并控 72152/72182提速",
+      "productPrice": "799.00",
+      "transTime": "2017-08-06 17:35:58"
+    }],
+    "orderId": "43213697889467484",
+    "receiverAddr": "浙江省 杭州市 余杭区 良运路瑞麒时代 ",
+    "receiverCellPhone": "18858270844",
+    "receiverName": "刘少怪",
+    "receiverPhone": "18858270844",
+    "shopInfo": {
+      "nick": "xxxwd",
+      "shopId": "351035383",
+      "shopName": "小牛爱好者集中营",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=351035383"
+    },
+    "statusText": "交易成功",
+    "totalPrice": 3997.0,
+    "transTime": "2017-08-06 17:35:58",
+    "updateTime": "2018-07-20 10:44:56",
+    "zipcode": "311100"
+  }, {
+    "deliveryType": "直冲",
+    "isSuccess": false,
+    "items": [{
+      "productCnt": 1,
+      "productName": "中国电信官方旗舰店 湖北手机充值50元电信话费直充快充 电信充值",
+      "productPrice": "49.90",
+      "transTime": "2017-07-28 11:06:05"
+    }],
+    "orderId": "40321290717467484",
+    "receiverCellPhone": "17702718868",
+    "receiverName": "刘少怪",
+    "receiverPhone": "17702718868",
+    "shopInfo": {
+      "imgUrl": "https://gtd.alicdn.com/tps/i2/TB1aJQKFVXXXXamXFXXEDhGGXXX-32-32.png",
+      "nick": "中国电信官方旗舰店",
+      "shopId": "809107100",
+      "shopName": "中国电信官方旗舰店",
+      "shopUrl": "https://store.taobao.com/shop/view_shop.htm?user_number_id=809107100"
+    },
+    "statusText": "充值成功",
+    "totalPrice": 49.9,
+    "transTime": "2017-07-28 11:06:05",
+    "updateTime": "2018-07-20 10:44:56",
+    "zipcode": "000000"
+  }]
+}

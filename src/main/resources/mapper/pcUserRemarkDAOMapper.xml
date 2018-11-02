@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.PcUserRemarkDAO">
+    <resultMap id="pcUserRemarkMap" type="com.dwsj.vo.PcUserRemarkVo"></resultMap>
+    <select id="getById" resultMap="pcUserRemarkMap" parameterType="long">
+        select * from t_pc_user_remark where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_pc_user_remark where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="pcUserRemarkMap">
+        select * from t_pc_user_remark order by create_time desc  limit #{pageNo},#{pageSize}
+    </select>
+    <select id="listAll" resultMap="pcUserRemarkMap">
+        select * from t_pc_user_remark
+    </select>
+    <select id="getAllList" resultMap="pcUserRemarkMap">
+        select * from t_pc_user_remark where pc_user_id=#{id} and kehu_id=#{kehuId}
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_pc_user_remark
+    </select>
+    <insert id="save" parameterType="pcUserRemarkVo">
+        insert into t_pc_user_remark (pc_user_id, kehu_id, content, create_time) values (#{pcUserId}, #{kehuId}, #{content}, now())
+    </insert>
+</mapper>

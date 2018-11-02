@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<!--[if lt IE 9]>
+            <script src=“js/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="js/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+		<link rel="stylesheet" href="css/index.css" />
+
+		<title>借条平台认证</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="head_left">
+				<canvas id="process" width="200" height="200"></canvas>
+			</div>
+			<div class="head_right">
+				<h2>借条平台认证</h2>
+				<p>认证越详细、越真实，越容易通过审核哦</p>
+			</div>
+		</header>
+		<div class="main">
+			<ul>
+				<li>
+					<div class="li_left">
+						<span class="span1"><img src="images/mifang.jpg" alt="" /></span>
+						<span class="span2" style="position: absolute;top:0;font-size: 0.4rem;">米房服务</span>
+					</div>
+					<div class="li_right">
+						<span class="span3"><img src="images/ok.png" alt="" /></span>
+						<span class="span5" style="display: none;">未认证</span>
+						<a href="mifang.html"><span class="span4"></span></a>
+					</div>
+				</li>
+				<li>
+					<div class="li_left">
+						<span class="span1"><img src="images/youpingzheng.jpg" alt="" /></span>
+						<span class="span2" style="position: absolute;top:0;font-size: 0.4rem;">有凭证</span>
+					</div>
+					<div class="li_right">
+						<span class="span3" style="display: none;"></span>
+						<span class="span5">未认证</span>
+						<a href="youpingzheng.html"><span class="span4"></span></a>
+					</div>
+				</li>
+				<li>
+					<div class="li_left">
+						<span class="span1"><img src="images/jinjiedao.jpg" alt="" /></span>
+						<span class="span2" style="position: absolute;top:0;font-size: 0.4rem;">今借到</span>
+					</div>
+					<div class="li_right">
+						<span class="span3" style="display: none;"></span>
+						<span class="span5">未认证</span>
+						<a href="jinjiedao.html"><span class="span4"></span></a>
+					</div>
+				</li>
+				<li>
+					<div class="li_left">
+						<span class="span1"><img src="images/xiaocai.jpg" alt="" /></span>
+						<span class="span2" style="position: absolute;top:0;font-size: 0.4rem;">小财管家</span>
+					</div>
+					<div class="li_right">
+						<span class="span3" style="display: none;"></span>
+						<span class="span5">未认证</span>
+						<a href="xiaocai.html"><span class="span4"></span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/flexible.js"></script>
+	<script>
+		(function() {
+			var c = document.getElementById('process'),
+				process = 0,
+				ctx = c.getContext('2d');
+				
+
+			// 画白色的圆
+			ctx.beginPath();
+			ctx.arc(100, 100, 60, 0, Math.PI * 2);
+			ctx.closePath();
+			ctx.fillStyle = '#fff';
+			ctx.fill();
+
+			function animate() {
+				requestAnimationFrame(function() {
+					process = process + 1;
+					drawCricle(ctx, process);
+					if(process < 100) {
+						animate();
+					}
+				});
+			}
+
+			function drawCricle(ctx, percent) {
+				// 画进度环
+				ctx.beginPath();
+				ctx.moveTo(100, 100);
+				ctx.arc(100, 100, 60, Math.PI * 1.5, Math.PI * (1.5 + 2 * percent / 100));
+				ctx.closePath();
+				ctx.fillStyle = '#FF9600';
+				ctx.fill();
+
+				// 画内填充圆
+				ctx.beginPath();
+				ctx.arc(100, 100, 55, 0, Math.PI * 2);
+				ctx.closePath();
+				ctx.fillStyle = '#3762FF';
+				ctx.fill();
+
+				// 填充文字
+				ctx.font = "bold 11pt Microsoft YaHei";
+				ctx.fillStyle = '#fff';
+				ctx.textAlign = 'center';
+				ctx.textBaseline = 'middle';
+				ctx.moveTo(100, 100);
+				ctx.fillText(process + "%", 100, 90);
+				ctx.fillText("资料完成度", 100, 115);
+			}
+
+			animate();
+		}());
+	</script>
+
+</html>

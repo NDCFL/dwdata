@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dwsj.dao.KeHuDAO">
+    <resultMap id="keHuMap" type="com.dwsj.vo.KeHuVo"></resultMap>
+    <resultMap id="select2Map" type="com.dwsj.vo.Select2Vo"></resultMap>
+    <resultMap id="countMap" type="com.dwsj.vo.CountVo"></resultMap>
+    <sql id="search">
+        <if test="#{pageQuery.searchVal!=null} and #{pageQuery.searchVal!=''}">
+            and (kehu_name like concat('%${pageQuery.searchVal}%'))
+        </if>
+    </sql>
+    <select id="getById" resultMap="keHuMap" parameterType="long">
+        select * from t_kehu where id = #{id}
+    </select>
+    <delete id="removeById" parameterType="long">
+        delete from t_kehu where id = #{id}
+    </delete>
+    <select id="listPage" resultMap="keHuMap">
+        select * from t_kehu where 1=1 <include refid="search"></include> order by create_time desc limit #{pageNo},#{pageSize}
+    </select>
+    <select id="getJiFen" resultMap="select2Map">
+        select id,kehu_name as text from t_kehu
+    </select>
+    <select id="listAll" resultMap="keHuMap">
+        select * from t_kehu
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(id) from t_kehu where 1=1 <include refid="search"></include>
+    </select>
+    <select id="listPages" resultMap="keHuMap">
+        select * from t_kehu where  pc_user_id=#{keHuVo.pcUserId} <include refid="search"></include>
+        <if test="keHuVo.ids!=null and keHuVo.ids!='' "> and kehu_type in
+            <foreach collection="keHuVo.commodityIds" item="paramItem" open="(" separator="," close=")">
+                #{paramItem}
+            </foreach>
+        </if>
+        order by create_time  desc limit #{pageQuery.pageNo},#{pageQuery.pageSize}
+    </select>
+    <select id="counts" resultType="java.lang.Long">
+        select count(id) from t_kehu where pc_user_id=#{keHuVo.pcUserId} <include refid="search"></include>
+        <if test="keHuVo.ids!=null and keHuVo.ids!='' ">and kehu_type in
+            <foreach collection="keHuVo.commodityIds" item="paramItem" open="(" separator="," close=")">
+            #{paramItem}
+            </foreach>
+        </if>
+    </select>
+    <select id="checkKeHu" resultMap="keHuMap" >
+        select id,create_time,kehu_head_img from t_kehu where kehu_name=#{kehuName} and kehu_phone = #{kehuPhone} and kehu_idcard=#{kehuIdcard} limit 1
+    </select>
+    <select id="getCount" resultMap="countMap" >
+        select
+        (select count(id) from t_kehu where pc_user_id=#{id}) as 'allCount',
+        (select count(id) from t_kehu where pc_user_id=#{id} and kehu_type in (0,3)) as 'gzCount',
+        (select count(id) from t_kehu where pc_user_id=#{id} and kehu_type in (1,3)) as 'hzCount',
+        (select count(id) from t_kehu where pc_user_id=#{id} and kehu_type in (-1,2,0)) as 'whzCount',
+        (select jifen from t_pc_user where id=#{id}) as 'jifen'
+        from t_kehu limit 1
+    </select>
+    <select id="getKeHuInfo" resultMap="keHuMap" parameterType="com.dwsj.vo.KeHuVo">
+        select kehu_head_img from t_kehu where kehu_name=#{kehuName} and kehu_idcard=#{kehuIdcard} limit 1
+    </select>
+    <select id="cnt" resultType="int" parameterType="com.dwsj.vo.KeHuVo">
+        select count(id) from t_kehu where kehu_name=#{kehuName} and kehu_idcard=#{kehuIdcard} and kehu_phone=#{kehuPhone} and pc_user_id=#{pcUserId}
+    </select>
+    <insert id="save" parameterType="keHuVo">
+        insert into t_kehu (pc_user_id, kehu_name, kehu_sex, kehu_phone, kehu_idcard, kehu_head_img, kehu_type, kehu_birthday, kehu_address, remark, create_time, up_time,xiaodaitime) values (#{pcUserId}, #{kehuName}, #{kehuSex}, #{kehuPhone}, #{kehuIdcard}, #{kehuHeadImg}, #{kehuType}, #{kehuBirthday}, #{kehuAddress}, #{remark}, now(), #{upTime},date_add(now(), interval -1 day))
+    </insert>
+    <update id="updateStatus">
+        update t_kehu set kehu_type = #{status} where id=#{id}
+    </update>
+    <update id="updateTime">
+        update t_kehu set up_time = now() where id=#{id}
+    </update>
+    <update id="updateXiaoDai">
+        update t_kehu set xiaodai = #{result},xiaodaitime=now() where id=#{id}
+    </update>
+    <update id="updatePhone">
+        update t_kehu set kehu_phone = #{phone} where id=#{id}
+    </update>
+    <update id="updateRemark">
+        update t_kehu set remark = #{remark} where id=#{id}
+    </update>
+    <update id="update">
+        update t_kehu set
+        kehu_name = #{kehuName},
+        kehu_sex = #{kehuSex},
+        kehu_phone = #{kehuPhone},
+        kehu_idcard = #{kehuIdcard},
+        kehu_type = #{kehuType},
+        kehu_birthday = #{kehuBirthday},
+        kehu_address = #{kehuAddress},
+        remark = #{remark},
+        create_time = now(),
+        up_time = #{upTime}
+        where id = #{id}
+    </update>
+</mapper>
